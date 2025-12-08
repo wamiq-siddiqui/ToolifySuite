@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- MAIN PAGES -->
+  <url>
+    <loc>https://toolifysuite.netlify.app/</loc>
+    <priority>1.00</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://toolifysuite.netlify.app/about.html</loc>
+    <priority>0.70</priority>
+  </url>
+
+  <url>
+    <loc>https://toolifysuite.netlify.app/contact.html</loc>
+    <priority>0.70</priority>
+  </url>
+
+  <url>
+    <loc>https://toolifysuite.netlify.app/privacy.html</loc>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://toolifysuite.netlify.app/terms.html</loc>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://toolifysuite.netlify.app/cookie-policy.html</loc>
+    <priority>0.60</priority>
+  </url>
+
+  <!-- ERROR PAGES (OPTIONAL, low priority) -->
+  <url>
+    <loc>https://toolifysuite.netlify.app/404.html</loc>
+    <priority>0.10</priority>
+  </url>
+
+  <url>
+    <loc>https://toolifysuite.netlify.app/403.html</loc>
+    <priority>0.10</priority>
+  </url>
+
+  <url>
+    <loc>https://toolifysuite.netlify.app/500.html</loc>
+    <priority>0.10</priority>
+  </url>
+
+
+  <!-- TOOLS -->
+  <!-- Text Tools -->
+  <url>
+    <loc>https://toolifysuite.netlify.app/tools/word-counter.html</loc>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://toolifysuite.netlify.app/tools/stylish-text.html</loc>
+    <priority>0.90</priority>
+  </url>
+
+  <!-- Image Tools -->
+  <url>
+    <loc>https://toolifysuite.netlify.app/tools/image-compressor.html</loc>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://toolifysuite.netlify.app/tools/image-resizer.html</loc>
+    <priority>0.90</priority>
+  </url>
+
+  <!-- Video Tools -->
+  <url>
+    <loc>https://toolifysuite.netlify.app/tools/video-to-mp3.html</loc>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://toolifysuite.netlify.app/tools/video-compressor.html</loc>
+    <priority>0.90</priority>
+  </url>
+
+  <!-- Generator Tools -->
+  <url>
+    <loc>https://toolifysuite.netlify.app/tools/password-generator.html</loc>
+    <priority>1.00</priority>
+  </url>
+
+  <url>
+    <loc>https://toolifysuite.netlify.app/tools/qr-code-generator.html</loc>
+    <priority>0.90</priority>
+  </url>
+
+  <!-- Social Media Tools -->
+  <url>
+    <loc>https://toolifysuite.netlify.app/tools/hashtag-generator.html</loc>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://toolifysuite.netlify.app/tools/bio-formatter.html</loc>
+    <priority>0.90</priority>
+  </url>
+
+  <!-- Utility Tools -->
+  <url>
+    <loc>https://toolifysuite.netlify.app/tools/unit-converter.html</loc>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://toolifysuite.netlify.app/tools/age-calculator.html</loc>
+    <priority>0.90</priority>
+  </url>
+
+</urlset>

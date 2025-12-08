@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+
+# Block private system folders (if any)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /config/
+
+# Block temp files (optional)
+Disallow: /*.tmp$
+Disallow: /*.log$
+
+# Sitemap location
+Sitemap: https://toolifysuite.netlify.app/sitemap.xml

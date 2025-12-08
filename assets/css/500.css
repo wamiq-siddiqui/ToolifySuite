@@ -1,0 +1,82 @@
+/* CONTAINER */
+.error-500-container {
+  width: 100%;
+  padding: 100px 20px;
+  text-align: center;
+  animation: error-500-fadeIn 0.7s ease forwards;
+}
+
+/* WRAPPER */
+.error-500-wrapper {
+  max-width: 600px;
+  margin: auto;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 50px 30px;
+  transform: translateY(20px);
+  opacity: 0;
+  animation: error-500-slideUp 0.8s ease 0.15s forwards;
+}
+
+/* CODE */
+.error-500-code {
+  font-size: 90px;
+  font-weight: 800;
+  color: var(--primary);
+  margin-bottom: 10px;
+}
+
+/* MESSAGE */
+.error-500-message {
+  font-size: 18px;
+  opacity: 0.9;
+  margin-bottom: 28px;
+  line-height: 1.6;
+}
+
+/* BUTTON */
+.error-500-btn {
+  background: var(--primary);
+  color: #fff;
+  padding: 12px 28px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.error-500-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+/* TAP ANIMATION */
+.error-500-btn.pg-tap {
+  transform: scale(0.94) !important;
+  opacity: 0.85 !important;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+/* ANIMATIONS */
+@keyframes error-500-fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes error-500-slideUp {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

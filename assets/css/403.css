@@ -1,0 +1,85 @@
+/* 403 PAGE */
+
+.error-403-container {
+  width: 100%;
+  padding: 100px 20px;
+  text-align: center;
+  animation: error-403-fadeIn 0.7s ease forwards;
+}
+
+.error-403-wrapper {
+  max-width: 600px;
+  margin: auto;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 50px 30px;
+  transform: translateY(20px);
+  opacity: 0;
+  animation: error-403-slideUp 0.8s ease 0.15s forwards;
+}
+
+.error-403-code {
+  font-size: 85px;
+  font-weight: 800;
+  color: var(--primary);
+  margin-bottom: 12px;
+}
+
+.error-403-message {
+  font-size: 18px;
+  opacity: 0.88;
+  margin-bottom: 28px;
+  line-height: 1.6;
+}
+
+.error-403-btn {
+  background: var(--primary);
+  color: #fff;
+  padding: 12px 26px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.error-403-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+/* Animations */
+@keyframes error-403-fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes error-403-slideUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Mobile + Desktop tap animation for 403 page button */
+.error-403-btn.pg-tap {
+  transform: scale(0.94) !important;
+  opacity: 0.85 !important;
+}
+
+/* Generic shrink effect for other tool buttons (already used globally) */
+.pg-tap {
+  transform: scale(0.94) !important;
+  opacity: 0.85 !important;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}

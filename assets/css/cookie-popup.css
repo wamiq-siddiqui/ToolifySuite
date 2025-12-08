@@ -1,0 +1,84 @@
+/* ===============================
+   COOKIE POPUP DESIGN (STANDALONE)
+   =============================== */
+
+.cookie-popup-dialog {
+  width: 90%;
+  max-width: 430px;
+  background: #fff;
+  padding: 26px 24px;
+  border-radius: 14px;
+
+  text-align: center;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.2);
+
+  animation: cookieFadeIn 0.35s ease-out forwards;
+}
+
+/* TITLE */
+.cookie-popup-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+/* DESCRIPTION */
+.cookie-popup-desc {
+  font-size: 15px;
+  opacity: 0.9;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.cookie-popup-desc a {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+/* BUTTON ROW */
+.cookie-popup-actions {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.cookie-popup-btn {
+  padding: 10px 18px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.18s ease, opacity 0.18s ease;
+}
+
+.cookie-popup-ghost {
+  background: #f1f5f9;
+  color: var(--text);
+}
+
+.cookie-popup-primary {
+  background: var(--primary);
+  color: #fff;
+}
+
+.cookie-popup-btn:hover {
+  transform: translateY(-2px);
+}
+
+.cookie-popup-btn:active {
+  transform: scale(0.94);
+  opacity: 0.85;
+}
+
+/* POPUP ANIMATION */
+@keyframes cookieFadeIn {
+  from {
+    transform: translateY(18px) scale(0.96);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}

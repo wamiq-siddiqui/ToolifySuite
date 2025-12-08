@@ -1,0 +1,558 @@
+/* MAIN CONTAINER */
+.image-compressor-container {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+/* TITLE + DESCRIPTION */
+.image-compressor-container h1 {
+  font-size: 38px;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 12px;
+}
+
+.image-compressor-description {
+  font-size: 18px;
+  line-height: 1.65;
+  opacity: 0.92;
+  margin-bottom: 28px;
+}
+
+/* TOP GRID (UPLOAD + SETTINGS) */
+.image-compressor-top-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.1fr);
+  gap: 18px;
+  margin-top: 10px;
+}
+
+.image-compressor-upload-card,
+.image-compressor-settings-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 16px 16px 18px;
+}
+
+.image-compressor-upload-card h2,
+.image-compressor-settings-card h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* DROPZONE */
+.image-compressor-dropzone {
+  border: 1px dashed var(--border);
+  border-radius: 12px;
+  padding: 22px 16px;
+  text-align: center;
+  background: #f8fafc;
+  cursor: pointer;
+  transition: 0.15s ease;
+}
+
+.image-compressor-dropzone:hover {
+  border-color: var(--primary);
+  background: #eef9f8;
+}
+
+.image-compressor-dropzone.active {
+  border-color: var(--primary);
+  background: #e0f7f4;
+}
+
+/* Dropzone desktop tweak */
+@media (min-width: 900px) {
+  .image-compressor-upload-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+  }
+
+  .image-compressor-dropzone {
+    flex: 1;
+    min-height: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.image-compressor-drop-main {
+  font-size: 15px;
+  margin-bottom: 6px;
+}
+
+.image-compressor-drop-main span {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.image-compressor-drop-sub {
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+/* ERROR */
+.image-compressor-error-message {
+  margin-top: 10px;
+  font-size: 13px;
+  color: #b91c1c;
+}
+
+/* SETTINGS */
+.image-compressor-setting-block {
+  margin-bottom: 16px;
+}
+
+.image-compressor-setting-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.image-compressor-setting-header label {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.image-compressor-quality-value {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+/* RANGE */
+#image-compressor-quality {
+  width: 100%;
+}
+
+/* QUALITY PRESETS */
+.image-compressor-quality-presets {
+  display: flex;
+  gap: 6px;
+  margin-top: 6px;
+  flex-wrap: wrap;
+}
+
+/* GENERIC BUTTON */
+.image-compressor-btn {
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  background: var(--card);
+  transition: background 0.15s ease, color 0.15s ease, transform 0.15s ease;
+}
+
+.image-compressor-btn.primary {
+  background: var(--primary);
+  color: #fff;
+  border-color: var(--primary);
+}
+
+.image-compressor-btn.ghost {
+  background: transparent;
+  color: var(--text);
+  border-color: var(--border);
+}
+
+.image-compressor-btn.wide {
+  width: 100%;
+}
+
+.image-compressor-btn.small {
+  padding: 7px 10px;
+  font-size: 13px;
+}
+
+/* DISABLED STATE */
+.image-compressor-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* SELECT */
+#image-compressor-format {
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  font-size: 14px;
+}
+
+/* INLINE LABEL */
+.image-compressor-inline {
+  font-size: 13px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* RESIZE GRID */
+.image-compressor-resize-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+  margin-bottom: 6px;
+  margin-top: 6px;
+}
+
+.image-compressor-resize-grid label {
+  font-size: 13px;
+}
+
+.image-compressor-resize-grid input {
+  width: 100%;
+  padding: 7px 9px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  font-size: 14px;
+}
+
+/* MAIN BUTTONS */
+.image-compressor-main-buttons {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* QUEUE SECTION */
+.image-compressor-queue-section {
+  margin-top: 30px;
+}
+
+.image-compressor-queue-header h2 {
+  font-size: 22px;
+  margin-bottom: 4px;
+}
+
+.image-compressor-queue-note {
+  font-size: 13px;
+  opacity: 0.85;
+}
+
+.image-compressor-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* QUEUE ITEM */
+.image-compressor-item {
+  display: grid;
+  grid-template-columns: auto 1.8fr auto;
+  gap: 10px;
+  align-items: center;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-size: 14px;
+  transition: 0.25s ease;
+}
+
+.image-compressor-thumb {
+  width: 70px;
+  height: 70px;
+  border-radius: 8px;
+  object-fit: cover;
+  background: #e5e7eb;
+}
+
+.image-compressor-item-main {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.image-compressor-file-name {
+  font-weight: 500;
+  word-break: break-all;
+}
+
+.image-compressor-meta-row {
+  font-size: 12px;
+  opacity: 0.85;
+}
+
+.image-compressor-meta-row span + span::before {
+  content: "•";
+  margin: 0 6px;
+  opacity: 0.6;
+}
+
+.image-compressor-status {
+  font-size: 12px;
+  opacity: 0.9;
+  transition: 0.3s ease;
+}
+
+.image-compressor-status.success {
+  color: #16a34a;
+}
+
+.image-compressor-status.error {
+  color: #b91c1c;
+}
+
+.image-compressor-item-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* CONTENT */
+.image-compressor-content {
+  margin-top: 40px;
+  line-height: 1.7;
+}
+
+.image-compressor-content h2 {
+  font-size: 26px;
+  margin-bottom: 10px;
+  color: var(--primary);
+}
+
+.image-compressor-content h3 {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.image-compressor-content p {
+  font-size: 16px;
+  opacity: 0.95;
+  margin-top: 8px;
+}
+
+/* FAQ */
+.image-compressor-faq {
+  margin-top: 40px;
+  padding-bottom: 10px;
+}
+
+.image-compressor-faq h2 {
+  font-size: 26px;
+  margin-bottom: 12px;
+  color: var(--primary);
+}
+
+.image-compressor-faq h3 {
+  font-size: 18px;
+  margin-top: 18px;
+}
+
+.image-compressor-faq p {
+  font-size: 15px;
+  opacity: 0.95;
+  margin-top: 6px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 800px) {
+  .image-compressor-top-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .image-compressor-item {
+    grid-template-columns: auto minmax(0, 1fr);
+    grid-template-rows: auto auto;
+  }
+
+  .image-compressor-item-actions {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    grid-column: 1 / 3;
+  }
+}
+
+@media (max-width: 500px) {
+  .image-compressor-main-buttons {
+    flex-direction: column;
+  }
+
+  .image-compressor-item {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .image-compressor-item-main {
+    order: 2;
+  }
+
+  .image-compressor-item-actions {
+    order: 3;
+  }
+
+  .image-compressor-thumb {
+    width: 100%;
+    height: 170px;
+  }
+}
+
+/* Resize preset buttons */
+.image-compressor-resize-presets,
+.image-compressor-bulk-presets {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin: 6px 0 10px;
+}
+
+.image-compressor-bulk-presets {
+  margin-top: 24px;
+  align-items: center;
+}
+
+.image-compressor-bulk-presets span {
+  font-size: 13px;
+  opacity: 0.8;
+  margin-right: 6px;
+}
+
+.image-compressor-btn.small.active {
+  background: var(--primary);
+  color: #fff;
+  border-color: var(--primary);
+  transform: scale(1.05);
+}
+
+/* Disabled resize UI */
+input[disabled] {
+  opacity: 0.5;
+  background: #f1f5f9;
+}
+
+/* Slight drag animation */
+.image-compressor-dropzone.active {
+  transform: scale(1.02);
+}
+
+/* Hide presets by default (JS toggles) */
+#image-compressor-single-presets,
+#image-compressor-bulk-presets {
+  display: none;
+}
+
+/* =====================================================
+   IMAGE COMPRESSOR — PROFESSIONAL ANIMATIONS
+   (Non-destructive. Only adds visual effects.)
+===================================================== */
+
+/* Page fade + slide reveal */
+.image-compressor-container {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.55s ease, transform 0.55s ease;
+}
+.image-compressor-container.ic-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Section fade-ups on scroll */
+.ic-reveal {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.55s ease, transform 0.55s ease;
+}
+.ic-reveal.ic-show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Cards subtle float */
+.image-compressor-upload-card,
+.image-compressor-settings-card,
+.image-compressor-queue-section,
+.image-compressor-content,
+.image-compressor-faq {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.55s ease, transform 0.55s ease;
+}
+.ic-block-visible {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+/* Dropzone active pulse */
+.image-compressor-dropzone {
+  transition: border-color 0.25s ease, background-color 0.25s ease,
+    transform 0.25s ease, box-shadow 0.25s ease;
+}
+.image-compressor-dropzone:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(59, 130, 246, 0.12);
+}
+.image-compressor-dropzone.active {
+  transform: scale(1.03);
+  box-shadow: 0 6px 16px rgba(59, 130, 246, 0.18);
+}
+
+/* Buttons smoother */
+.image-compressor-btn {
+  transition: background-color 0.25s ease, border-color 0.25s ease,
+    transform 0.25s ease, opacity 0.25s ease, box-shadow 0.25s ease;
+}
+
+.image-compressor-btn.primary:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(59, 130, 246, 0.28);
+}
+
+.image-compressor-btn.ghost:hover:not(:disabled) {
+  transform: translateY(-1px);
+  background: #f1f5f9;
+}
+
+/* Queue item smooth drop-in */
+.image-compressor-item {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.45s ease, transform 0.45s ease;
+}
+.ic-item-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Status update flash effect */
+.image-compressor-status.success {
+  animation: icFlashSuccess 0.6s ease;
+}
+@keyframes icFlashSuccess {
+  from {
+    background: rgba(34, 197, 94, 0.18);
+  }
+  to {
+    background: transparent;
+  }
+}
+.image-compressor-status.error {
+  animation: icFlashError 0.6s ease;
+}
+@keyframes icFlashError {
+  from {
+    background: rgba(239, 68, 68, 0.18);
+  }
+  to {
+    background: transparent;
+  }
+}
+
+/* TOUCH TAP FEEDBACK — MOBILE/TABLET ONLY */
+.image-compressor-btn.ic-tap {
+  transform: scale(0.94) !important;
+  opacity: 0.85 !important;
+}

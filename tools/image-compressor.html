@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>
+      Image Compressor – Reduce Image Size Online Without Quality Loss |
+      ToolifySuite
+    </title>
+
+    <meta
+      name="description"
+      content="Free online image compressor that reduces JPG, PNG and WebP size without noticeable quality loss. Compress multiple images, change quality, resize and download them instantly in your browser."
+    />
+
+    <meta
+      name="keywords"
+      content="image compressor, compress images, reduce image size, jpg compressor, png compressor, webp compressor, online image optimizer, bulk image compression"
+    />
+
+    <!-- OG TAGS -->
+    <meta
+      property="og:title"
+      content="Image Compressor – Reduce Image Size Online | ToolifySuite"
+    />
+    <meta
+      property="og:description"
+      content="Compress JPG, PNG and WebP images online with quality control, resizing and batch download. All processing happens in your browser."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://toolifysuite.netlify.app/og-image.jpg"
+    />
+    <meta
+      property="og:url"
+      content="https://toolifysuite.netlify.app/tools/image-compressor.html"
+    />
+
+    <!-- TWITTER CARD -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Image Compressor – Online Image Size Reducer"
+    />
+    <meta
+      name="twitter:description"
+      content="Fast, privacy-friendly image compressor with bulk support and quality slider. No uploads to any server."
+    />
+    <meta
+      name="twitter:image"
+      content="https://toolifysuite.netlify.app/og-image.jpg"
+    />
+
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/image-compressor.css" />
+    <link rel="stylesheet" href="../assets/css/cookie-popup.css" />
+
+    <!-- SCHEMA.ORG STRUCTURED DATA -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Image Compressor",
+        "url": "https://toolifysuite.netlify.app/tools/image-compressor.html",
+        "applicationCategory": "Utility",
+        "operatingSystem": "Any",
+        "description": "A browser-based image compressor to reduce JPG, PNG and WebP file size with quality control, resizing and batch download. No image is uploaded to any server.",
+        "provider": {
+          "@type": "Organization",
+          "name": "ToolifySuite",
+          "url": "https://toolifysuite.netlify.app"
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav>
+      <a href="../index.html" class="logo">ToolifySuite</a>
+
+      <!-- HAMBURGER (MOBILE) -->
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <!-- MAIN NAV MENU -->
+      <ul id="nav-menu">
+        <li><a href="../index.html">Home</a></li>
+
+        <!-- TOOLS DROPDOWN -->
+        <li class="dropdown">
+          <span class="drop-btn">Tools</span>
+
+          <!-- FIRST + SECOND LEVEL MENUS (GROUPED) -->
+          <div class="dropdown-menu">
+            <!-- Text tools -->
+            <div class="submenu-group">
+              <div class="submenu-item" data-submenu="text-tools">
+                Text Tools ▸
+              </div>
+              <div class="submenu-panel" id="text-tools">
+                <a href="word-counter.html">Word Counter</a>
+                <a href="stylish-text.html">Stylish Text Converter</a>
+              </div>
+            </div>
+
+            <!-- Image tools -->
+            <div class="submenu-group">
+              <div class="submenu-item" data-submenu="image-tools">
+                Image Tools ▸
+              </div>
+              <div class="submenu-panel" id="image-tools">
+                <a href="image-compressor.html">Image Compressor</a>
+                <a href="image-resizer.html">Image Resizer</a>
+              </div>
+            </div>
+
+            <!-- Video tools -->
+            <div class="submenu-group">
+              <div class="submenu-item" data-submenu="video-tools">
+                Video Tools ▸
+              </div>
+              <div class="submenu-panel" id="video-tools">
+                <a href="video-to-mp3.html">Video to MP3</a>
+                <a href="video-compressor.html">Video Compressor</a>
+              </div>
+            </div>
+
+            <!-- Generator tools -->
+            <div class="submenu-group">
+              <div class="submenu-item" data-submenu="generator-tools">
+                Generator Tools ▸
+              </div>
+              <div class="submenu-panel" id="generator-tools">
+                <a href="password-generator.html">Password Generator</a>
+                <a href="qr-code-generator.html">QR Code Generator</a>
+              </div>
+            </div>
+
+            <!-- Social media tools -->
+            <div class="submenu-group">
+              <div class="submenu-item" data-submenu="social-tools">
+                Social Media Tools ▸
+              </div>
+              <div class="submenu-panel" id="social-tools">
+                <a href="hashtag-generator.html">Hashtag Generator</a>
+                <a href="bio-formatter.html">Bio Formatter</a>
+              </div>
+            </div>
+
+            <!-- Utility tools -->
+            <div class="submenu-group">
+              <div class="submenu-item" data-submenu="utility-tools">
+                Utility Tools ▸
+              </div>
+              <div class="submenu-panel" id="utility-tools">
+                <a href="unit-converter.html">Unit Converter</a>
+                <a href="age-calculator.html">Age Calculator</a>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+        <li><a href="../privacy.html">Privacy Policy</a></li>
+        <li><a href="../terms.html">Terms of Service</a></li>
+      </ul>
+    </nav>
+
+    <!-- TOOL CONTENT -->
+    <div class="image-compressor-container">
+      <h1>Image Compressor</h1>
+
+      <p class="image-compressor-description">
+        Compress JPG, PNG and WebP images without noticeable quality loss.
+        Upload multiple images, adjust quality, optionally resize and download
+        the optimized versions. All processing happens inside your browser — no
+        images are uploaded to any server.
+      </p>
+
+      <!-- ADS SLOT (TOP) -->
+      <div class="ad-slot">Ad Space</div>
+
+      <!-- UPLOAD + SETTINGS LAYOUT -->
+      <div class="image-compressor-top-grid">
+        <!-- UPLOAD CARD -->
+        <div class="image-compressor-upload-card">
+          <h2>Upload images</h2>
+
+          <div id="image-compressor-dropzone" class="image-compressor-dropzone">
+            <p class="image-compressor-drop-main">
+              Drop images here or <span>browse</span>
+            </p>
+            <p class="image-compressor-drop-sub">
+              Supported: JPG, PNG, WebP • Up to 15 MB per image • Max 20 images
+            </p>
+            <input
+              type="file"
+              id="image-compressor-file-input"
+              accept="image/*"
+              multiple
+              hidden
+            />
+          </div>
+
+          <p
+            id="image-compressor-error"
+            class="image-compressor-error-message"
+          ></p>
+        </div>
+
+        <!-- SETTINGS CARD -->
+        <div class="image-compressor-settings-card">
+          <h2>Compression settings</h2>
+
+          <!-- QUALITY -->
+          <div class="image-compressor-setting-block">
+            <div class="image-compressor-setting-header">
+              <label for="image-compressor-quality">Quality</label>
+              <span
+                id="image-compressor-quality-value"
+                class="image-compressor-quality-value"
+                >75%</span
+              >
+            </div>
+            <input
+              type="range"
+              id="image-compressor-quality"
+              min="10"
+              max="100"
+              value="75"
+            />
+
+            <div class="image-compressor-quality-presets">
+              <button
+                type="button"
+                class="image-compressor-btn ghost small"
+                data-quality="60"
+              >
+                Smaller
+              </button>
+              <button
+                type="button"
+                class="image-compressor-btn ghost small"
+                data-quality="75"
+              >
+                Balanced
+              </button>
+              <button
+                type="button"
+                class="image-compressor-btn ghost small"
+                data-quality="90"
+              >
+                Higher quality
+              </button>
+            </div>
+          </div>
+
+          <!-- FORMAT -->
+          <div class="image-compressor-setting-block">
+            <label for="image-compressor-format">Output format</label>
+            <select id="image-compressor-format">
+              <option value="original">Keep original format</option>
+              <option value="jpeg">Convert to JPG</option>
+              <option value="png">Convert to PNG</option>
+              <option value="webp">Convert to WebP (smaller)</option>
+            </select>
+          </div>
+
+          <!-- RESIZE -->
+          <div class="image-compressor-setting-block">
+            <div class="image-compressor-setting-header">
+              <label>Resize (optional)</label>
+              <label class="image-compressor-inline">
+                <input type="checkbox" id="image-compressor-resize-enable" />
+                Enable resize
+              </label>
+            </div>
+
+            <!-- SINGLE IMAGE PRESETS -->
+            <div
+              id="image-compressor-single-presets"
+              class="image-compressor-resize-presets"
+            >
+              <button
+                type="button"
+                class="image-compressor-btn ghost small"
+                data-preset="original"
+              >
+                Original
+              </button>
+              <button
+                type="button"
+                class="image-compressor-btn ghost small"
+                data-preset="sd"
+              >
+                SD
+              </button>
+              <button
+                type="button"
+                class="image-compressor-btn ghost small"
+                data-preset="hd"
+              >
+                HD
+              </button>
+              <button
+                type="button"
+                class="image-compressor-btn ghost small"
+                data-preset="ultra"
+              >
+                Ultra
+              </button>
+            </div>
+
+            <div class="image-compressor-resize-grid">
+              <div>
+                <label for="image-compressor-width">Width (px)</label>
+                <input
+                  type="number"
+                  id="image-compressor-width"
+                  min="1"
+                  placeholder="Auto"
+                />
+              </div>
+              <div>
+                <label for="image-compressor-height">Height (px)</label>
+                <input
+                  type="number"
+                  id="image-compressor-height"
+                  min="1"
+                  placeholder="Auto"
+                />
+              </div>
+            </div>
+
+            <label class="image-compressor-inline">
+              <input type="checkbox" id="image-compressor-keep-ratio" checked />
+              Maintain aspect ratio
+            </label>
+          </div>
+
+          <!-- EXTRA OPTIONS -->
+          <div class="image-compressor-setting-block">
+            <label>Options</label>
+            <label class="image-compressor-inline">
+              <input
+                type="checkbox"
+                id="image-compressor-strip-metadata"
+                checked
+              />
+              Remove EXIF / metadata (recommended)
+            </label>
+          </div>
+
+          <!-- MAIN BUTTONS -->
+          <div class="image-compressor-main-buttons">
+            <button
+              type="button"
+              id="image-compressor-compress-all-btn"
+              class="image-compressor-btn primary wide"
+              disabled
+            >
+              Compress all
+            </button>
+            <button
+              type="button"
+              id="image-compressor-clear-all-btn"
+              class="image-compressor-btn ghost"
+              disabled
+            >
+              Clear all
+            </button>
+          </div>
+
+          <!-- DOWNLOAD ALL -->
+          <button
+            type="button"
+            id="image-compressor-download-all-btn"
+            class="image-compressor-btn ghost wide"
+            disabled
+          >
+            Download all as ZIP
+          </button>
+        </div>
+      </div>
+
+      <!-- BULK PRESETS (MULTI IMAGE) -->
+      <div
+        id="image-compressor-bulk-presets"
+        class="image-compressor-bulk-presets"
+      >
+        <span>Bulk resize presets:</span>
+        <button
+          type="button"
+          class="image-compressor-btn ghost small"
+          data-preset-bulk="original"
+        >
+          Original
+        </button>
+        <button
+          type="button"
+          class="image-compressor-btn ghost small"
+          data-preset-bulk="sd"
+        >
+          SD
+        </button>
+        <button
+          type="button"
+          class="image-compressor-btn ghost small"
+          data-preset-bulk="hd"
+        >
+          HD
+        </button>
+        <button
+          type="button"
+          class="image-compressor-btn ghost small"
+          data-preset-bulk="ultra"
+        >
+          Ultra
+        </button>
+      </div>
+
+      <!-- QUEUE LIST -->
+      <section class="image-compressor-queue-section">
+        <div class="image-compressor-queue-header">
+          <h2>Images in queue</h2>
+          <p class="image-compressor-queue-note">
+            Add images using the upload area above. You can compress them
+            individually or all at once.
+          </p>
+        </div>
+
+        <ul id="image-compressor-list" class="image-compressor-list"></ul>
+      </section>
+
+      <!-- ADS SLOT (BOTTOM) -->
+      <div class="ad-slot">Ad Space</div>
+
+      <!-- SEO CONTENT -->
+      <section class="image-compressor-content">
+        <h2>Why compress images?</h2>
+        <p>
+          Large images slow down websites, waste bandwidth and take longer to
+          share or upload. By compressing images before using them on a website,
+          blog, store or social media, you reduce loading time without changing
+          the visible quality for most viewers.
+        </p>
+        <p>
+          This tool focuses on practical, everyday optimization: good balance
+          between quality and file size, support for popular formats and a
+          clean, distraction-free interface.
+        </p>
+
+        <h3>Which image formats are supported?</h3>
+        <p>
+          You can upload common formats such as JPG, PNG and WebP. The output
+          can stay in the original format or be converted to JPG, PNG or WebP
+          depending on your needs.
+        </p>
+
+        <h3>Does the compression run online or offline?</h3>
+        <p>
+          All compression and resizing happens directly in your browser using
+          HTML5 canvas APIs. Your files are not uploaded to any remote server,
+          which keeps the process private and fast.
+        </p>
+      </section>
+
+      <!-- FAQ -->
+      <section class="image-compressor-faq">
+        <h2>Frequently Asked Questions</h2>
+
+        <h3>Is this image compressor safe to use?</h3>
+        <p>
+          Yes. The entire process runs inside your browser. Images are not
+          uploaded to any external server, and nothing is stored online.
+        </p>
+
+        <h3>Will the image quality look bad after compression?</h3>
+        <p>
+          With the default balanced quality, most images keep their visual
+          clarity while becoming much smaller in size. You can increase or
+          decrease the quality using the slider.
+        </p>
+
+        <h3>What does “Remove EXIF / metadata” do?</h3>
+        <p>
+          Many photos contain extra information such as camera model, location
+          and creation date. Removing metadata reduces size and protects
+          privacy.
+        </p>
+
+        <h3>Can I resize and compress at the same time?</h3>
+        <p>
+          Yes. You can enable the resize option, set a target width or height
+          and keep the aspect ratio checked. The tool will resize and compress
+          in a single step.
+        </p>
+
+        <h3>How many images can I compress at once?</h3>
+        <p>
+          The tool is optimized for up to 20 images at a time, with a
+          recommended maximum size of around 15 MB per image to keep performance
+          smooth.
+        </p>
+
+        <h3>Do you keep any copies of my images?</h3>
+        <p>
+          No. Everything is processed in-memory in your browser tab. Once you
+          close or refresh the page, all images and compressed results are gone.
+        </p>
+      </section>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- COLUMN 1: BRAND -->
+        <div class="footer-col">
+          <h3 class="footer-logo">ToolifySuite</h3>
+          <p class="footer-text">
+            Fast, accurate and modern online tools designed for productivity. No
+            login, no installation — everything works instantly in your browser.
+          </p>
+        </div>
+
+        <!-- COLUMN 2: QUICK LINKS -->
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- COLUMN 3: LEGAL -->
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="../privacy.html">Privacy Policy</a></li>
+            <li><a href="../terms.html">Terms of Service</a></li>
+            <li><a href="../cookie-policy.html">Cookie Policy</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">© 2025 ToolifySuite. All rights reserved.</div>
+    </footer>
+
+    <button id="scrollTopBtn" class="scroll-top-btn">↑</button>
+
+    <!-- COOKIE CONSENT BANNER -->
+    <div id="cookie-popup-overlay">
+      <div class="cookie-popup-dialog">
+        <h3 class="cookie-popup-title">Cookie Preferences</h3>
+
+        <p class="cookie-popup-desc">
+          ToolifySuite uses essential cookies for core site features. You can
+          allow only essential cookies, or allow analytics and advertising
+          cookies for a better experience.
+          <a href="../cookie-policy.html">Learn more</a>.
+        </p>
+
+        <div class="cookie-popup-actions">
+          <button
+            id="cookie-popup-essential"
+            class="cookie-popup-btn cookie-popup-ghost"
+          >
+            Accept Essential
+          </button>
+
+          <button
+            id="cookie-popup-accept-all"
+            class="cookie-popup-btn cookie-popup-primary"
+          >
+            Accept All
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- LIBS + JS -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/image-compressor.js"></script>
+    <script src="../assets/js/cookie-popup.js"></script>
+  </body>
+</html>

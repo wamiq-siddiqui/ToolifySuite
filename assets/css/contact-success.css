@@ -1,0 +1,79 @@
+/* PAGE WRAPPER */
+.cs-page-container {
+  max-width: 850px;
+  margin: 80px auto;
+  padding: 0 20px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.55s ease, transform 0.55s ease;
+}
+
+.cs-page-container.cs-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* SUCCESS CARD */
+.cs-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  padding: 40px 28px;
+  border-radius: 14px;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.55s ease, transform 0.55s ease;
+}
+
+.cs-block.cs-show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* TITLE */
+.cs-title {
+  font-size: 34px;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 16px;
+}
+
+/* TEXT */
+.cs-text {
+  font-size: 17px;
+  line-height: 1.6;
+  opacity: 0.92;
+  margin-bottom: 26px;
+}
+
+/* BUTTON */
+.cs-btn {
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  background: var(--primary);
+  color: #fff;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.cs-btn:hover {
+  transform: translateY(-2px);
+}
+
+.cs-btn.cs-tap {
+  transform: scale(0.94);
+  opacity: 0.8;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .cs-title {
+    font-size: 28px;
+  }
+  .cs-text {
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,67 @@
+/* MAIN CONTAINER */
+.error-404-container {
+  width: 100%;
+  padding: 100px 20px;
+  text-align: center;
+  opacity: 0;
+  animation: error-404-fadeIn 0.7s ease forwards;
+}
+
+/* WRAPPER BOX */
+.error-404-wrapper {
+  max-width: 600px;
+  margin: auto;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 50px 30px;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: error-404-slideUp 0.8s ease 0.15s forwards;
+}
+
+/* BIG 404 CODE */
+.error-404-code {
+  font-size: 85px;
+  font-weight: 800;
+  color: var(--primary);
+  margin-bottom: 10px;
+}
+
+/* MESSAGE */
+.error-404-message {
+  font-size: 18px;
+  opacity: 0.85;
+  margin-bottom: 28px;
+  line-height: 1.6;
+}
+
+/* BUTTON */
+.error-404-btn {
+  background: var(--primary);
+  color: #fff;
+  padding: 12px 26px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.error-404-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+/* FADE-IN */
+@keyframes error-404-fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* SLIDE-UP */
+@keyframes error-404-slideUp {
+  0% { transform: translateY(30px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}

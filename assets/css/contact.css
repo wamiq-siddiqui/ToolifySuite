@@ -1,0 +1,129 @@
+/* PAGE WRAPPER */
+.contact-page-container {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 0 20px;
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.55s ease, transform 0.55s ease;
+}
+
+.contact-page-container.contact-page-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* TITLE */
+.contact-title {
+  font-size: 38px;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 12px;
+}
+
+/* TEXT */
+.contact-text {
+  font-size: 18px;
+  opacity: 0.92;
+  line-height: 1.65;
+  margin-bottom: 26px;
+}
+
+/* FORM */
+.contact-form {
+  background: var(--card);
+  padding: 22px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  margin-bottom: 40px;
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity 0.55s ease, transform 0.55s ease;
+}
+
+.contact-page-visible .contact-form {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* INPUTS */
+.contact-field {
+  margin-bottom: 16px;
+}
+
+.contact-field label {
+  display: block;
+  font-size: 15px;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.contact-field input,
+.contact-field textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: #f9fafb;
+  font-size: 15px;
+  transition: border-color 0.25s ease, background 0.25s ease;
+}
+
+.contact-field input:focus,
+.contact-field textarea:focus {
+  border-color: var(--primary);
+  background: #fff;
+}
+
+/* SUBMIT BUTTON */
+.contact-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: var(--primary);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.contact-btn:hover {
+  transform: translateY(-2px);
+  opacity: 0.92;
+}
+
+/* MOBILE TAP ANIMATION */
+.contact-btn.cp-tap {
+  transform: scale(0.94);
+  opacity: 0.85;
+}
+
+/* EXTRA INFO */
+.contact-subtitle {
+  font-size: 24px;
+  color: var(--primary);
+  margin-top: 30px;
+}
+
+.contact-list {
+  margin-top: 12px;
+  margin-left: 20px;
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .contact-title {
+    font-size: 30px;
+  }
+  .contact-text {
+    font-size: 16px;
+  }
+}
+
+.contact-btn {
+  transition: transform 0.25s ease, opacity 0.25s ease, background 0.25s ease;
+}

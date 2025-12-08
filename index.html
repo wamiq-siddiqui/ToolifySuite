@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO TITLE -->
+    <title>
+      ToolifySuite — Free Online Tools for Text, Images, Videos & Productivity
+    </title>
+
+    <!-- SEO DESCRIPTION -->
+    <meta
+      name="description"
+      content="ToolifySuite offers a clean collection of free online tools for text editing, image utilities, video helpers, generators, social media tools and everyday productivity tasks. Fast, lightweight and privacy-friendly."
+    />
+
+    <!-- SEO KEYWORDS (LIGHT) -->
+    <meta
+      name="keywords"
+      content="online tools, free tools, text tools, image tools, video tools, generator tools, social media tools, productivity tools, ToolifySuite"
+    />
+
+    <!-- CANONICAL -->
+    <link rel="canonical" href="https://toolifysuite.netlify.app/" />
+
+    <!-- OG TAGS (HOMEPAGE) -->
+    <meta
+      property="og:title"
+      content="ToolifySuite — Free Online Productivity Tools"
+    />
+    <meta
+      property="og:description"
+      content="Use fast and modern browser-based tools for text, images, videos, generators, social media and daily productivity — all in one place."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://toolifysuite.netlify.app/" />
+    <meta
+      property="og:image"
+      content="https://toolifysuite.netlify.app/og-image.jpg"
+    />
+
+    <!-- TWITTER CARD -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="ToolifySuite — Free Online Tools" />
+    <meta
+      name="twitter:description"
+      content="A growing collection of clean, fast and free online tools for text, images, videos and productivity."
+    />
+    <meta
+      name="twitter:image"
+      content="https://toolifysuite.netlify.app/og-image.jpg"
+    />
+
+    <!-- SCHEMA.ORG: WEBSITE + ORGANIZATION -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "ToolifySuite",
+        "url": "https://toolifysuite.netlify.app/",
+        "description": "A curated collection of free online tools for text, images, videos, generators, social media and productivity.",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://toolifysuite.netlify.app/?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    </script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "ToolifySuite",
+        "url": "https://toolifysuite.netlify.app/",
+        "logo": "https://toolifysuite.netlify.app/logo.png"
+      }
+    </script>
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/cookie-popup.css" />
+
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav class="nav-elevate">
+      <a href="index.html" class="logo">ToolifySuite</a>
+
+      <!-- HAMBURGER (MOBILE) -->
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <!-- MAIN NAV MENU -->
+      <ul id="nav-menu">
+        <li><a href="index.html">Home</a></li>
+
+        <!-- TOOLS DROPDOWN -->
+        <li class="dropdown">
+          <span class="drop-btn">Tools</span>
+
+          <!-- FIRST + SECOND LEVEL MENUS (GROUPED) -->
+          <div class="dropdown-menu">
+            <!-- Text tools -->
+            <div class="submenu-group">
+              <div class="submenu-item" data-submenu="text-tools">
+                Text Tools ▸
+              </div>
+              <div class="submenu-panel" id="text-tools">
+                <a href="tools/word-counter.html">Word Counter</a>
+                <a href="tools/stylish-text.html">Stylish Text Converter</a>
+              </div>
+            </div>
+
+            <!-- Image tools -->
+            <div class="submenu-group">
+              <div class="submenu-item" data-submenu="image-tools">
+                Image Tools ▸
+              </div>
+              <div class="submenu-panel" id="image-tools">
+                <a href="tools/image-compressor.html">Image Compressor</a>
+                <a href="tools/image-resizer.html">Image Resizer</a>
+              </div>
+            </div>
+
+            <!-- Video tools -->
+            <div class="submenu-group">
+              <div class="submenu-item" data-submenu="video-tools">
+                Video Tools ▸
+              </div>
+              <div class="submenu-panel" id="video-tools">
+                <a href="tools/video-to-mp3.html">Video to MP3</a>
+                <a href="tools/video-compressor.html">Video Compressor</a>
+              </div>
+            </div>
+
+            <!-- Generator tools -->
+            <div class="submenu-group">
+              <div class="submenu-item" data-submenu="generator-tools">
+                Generator Tools ▸
+              </div>
+              <div class="submenu-panel" id="generator-tools">
+                <a href="tools/password-generator.html">Password Generator</a>
+                <a href="tools/qr-code-generator.html">QR Code Generator</a>
+              </div>
+            </div>
+
+            <!-- Social media tools -->
+            <div class="submenu-group">
+              <div class="submenu-item" data-submenu="social-tools">
+                Social Media Tools ▸
+              </div>
+              <div class="submenu-panel" id="social-tools">
+                <a href="tools/hashtag-generator.html">Hashtag Generator</a>
+                <a href="tools/bio-formatter.html">Bio Formatter</a>
+              </div>
+            </div>
+
+            <!-- Utility tools -->
+            <div class="submenu-group">
+              <div class="submenu-item" data-submenu="utility-tools">
+                Utility Tools ▸
+              </div>
+              <div class="submenu-panel" id="utility-tools">
+                <a href="tools/unit-converter.html">Unit Converter</a>
+                <a href="tools/age-calculator.html">Age Calculator</a>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms of Service</a></li>
+      </ul>
+    </nav>
+
+    <!-- SEARCH -->
+    <div class="search-box reveal-on-scroll">
+      <input
+        id="search-input"
+        onkeyup="searchTools()"
+        placeholder="Search tools..."
+      />
+    </div>
+
+    <!-- HERO -->
+    <section class="hero reveal-on-scroll">
+      <h1>Simple, Fast and Reliable Online Tools</h1>
+      <p>
+        ToolifySuite brings together a curated selection of modern,
+        browser-based web tools built to save time and improve daily
+        productivity. Each tool runs instantly in your browser with no
+        installation, sign-up or complex setup. Whether you work with text,
+        images, videos or digital content, everything is optimized for clarity,
+        accuracy and speed.
+      </p>
+    </section>
+
+    <!-- AD SLOT (HERO BOTTOM) -->
+    <div class="ad-slot reveal-on-scroll">Ad Space</div>
+
+    <!-- AVAILABLE TOOLS -->
+    <h2 class="section-title reveal-on-scroll">Popular Tools</h2>
+
+    <div class="grid" id="tool-grid">
+      <div class="card reveal-on-scroll" data-stagger="1">
+        <a href="tools/word-counter.html" class="card-link">
+          <h3>Word Counter</h3>
+          <p>
+            Count words, characters, sentences and paragraphs with precision.
+          </p>
+        </a>
+      </div>
+
+      <div class="card reveal-on-scroll" data-stagger="2">
+        <a href="tools/password-generator.html" class="card-link">
+          <h3>Password Generator</h3>
+          <p>Create complex, secure passwords instantly.</p>
+        </a>
+      </div>
+
+      <div class="card reveal-on-scroll" data-stagger="3">
+        <a href="tools/image-compressor.html" class="card-link">
+          <h3>Image Compressor</h3>
+          <p>Reduce image size intelligently without losing clarity.</p>
+        </a>
+      </div>
+
+      <div class="card reveal-on-scroll" data-stagger="4">
+        <div class="card-link">
+          <h3>QR Code Generator</h3>
+          <p>Generate clean and scannable QR codes.</p>
+        </div>
+      </div>
+
+      <div class="card reveal-on-scroll" data-stagger="5">
+        <div class="card-link">
+          <h3>Stylish Text Converter</h3>
+          <p>Transform normal text into unique stylish variations.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- AD SLOT (TOOLS BOTTOM) -->
+    <div class="ad-slot reveal-on-scroll">Ad Space</div>
+
+    <!-- HOME CONTENT / SEO SECTION -->
+    <section class="home-content reveal-on-scroll">
+      <h2>All Your Everyday Tools in One Place</h2>
+      <p>
+        ToolifySuite is designed for people who work online every day — writers,
+        students, marketers, developers and content creators. Instead of opening
+        different websites for every small task, you can access a growing set of
+        focused tools in a single, clean interface.
+      </p>
+      <p>
+        Every tool is lightweight, mobile-friendly and tested for accuracy. You
+        can open the website, run the tool and move on with your work — no
+        distractions, pop-ups or noisy layouts.
+      </p>
+
+      <h3>Tool Categories</h3>
+      <ul class="about-list">
+        <li>
+          <strong>Text Tools:</strong> word counter, stylish text, formatting
+          helpers and more.
+        </li>
+        <li>
+          <strong>Image Tools:</strong> basic compression, resizing and simple
+          adjustments.
+        </li>
+        <li>
+          <strong>Video Tools:</strong> small utilities to convert, trim or
+          extract audio.
+        </li>
+        <li>
+          <strong>Generator Tools:</strong> password, QR codes and other
+          generators.
+        </li>
+        <li>
+          <strong>Social Media Tools:</strong> hashtags, bios and quick content
+          helpers.
+        </li>
+        <li>
+          <strong>Utility Tools:</strong> calculators, converters and daily-use
+          mini tools.
+        </li>
+      </ul>
+    </section>
+
+    <!-- FAQ SECTION (HOMEPAGE) -->
+    <section class="home-faq reveal-on-scroll">
+      <h2>Frequently Asked Questions</h2>
+
+      <h3>What is ToolifySuite?</h3>
+      <p>
+        ToolifySuite is a collection of free browser-based tools that help you
+        handle small but important tasks like counting words, generating
+        passwords, creating QR codes and more — without installing any software.
+      </p>
+
+      <h3>Is ToolifySuite completely free to use?</h3>
+      <p>
+        Yes. All tools are free to access. In the future, ads may appear to
+        support development and hosting costs, but the tools themselves will
+        remain free.
+      </p>
+
+      <h3>Do I need an account or sign-up?</h3>
+      <p>
+        No account is required. You can open any tool and start using it
+        immediately. No registration, login or email is needed.
+      </p>
+
+      <h3>Is my data or text stored anywhere?</h3>
+      <p>
+        No. All tools are designed to run directly inside your browser. For
+        tools like the Word Counter, your text never leaves your device and is
+        not stored on any server.
+      </p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer reveal-on-scroll">
+      <div class="footer-container">
+        <!-- COLUMN 1: BRAND -->
+        <div class="footer-col">
+          <h3 class="footer-logo">ToolifySuite</h3>
+          <p class="footer-text">
+            Fast, accurate and modern online tools designed for productivity. No
+            login, no installation — everything works instantly in your browser.
+          </p>
+        </div>
+
+        <!-- COLUMN 2: QUICK LINKS -->
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- COLUMN 3: LEGAL -->
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+            <li><a href="cookie-policy.html">Cookie Policy</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">© 2025 ToolifySuite. All rights reserved.</div>
+    </footer>
+
+    <!-- SCROLL TO TOP BUTTON -->
+    <button id="scrollTopBtn" class="scroll-top-btn">↑</button>
+
+    <!-- COOKIE CONSENT BANNER -->
+    <div id="cookie-popup-overlay">
+      <div class="cookie-popup-dialog">
+        <h3 class="cookie-popup-title">Cookie Preferences</h3>
+
+        <p class="cookie-popup-desc">
+          ToolifySuite uses essential cookies for core site features. You can
+          allow only essential cookies, or allow analytics and advertising
+          cookies for a better experience.
+          <a href="cookie-policy.html">Learn more</a>.
+        </p>
+
+        <div class="cookie-popup-actions">
+          <button
+            id="cookie-popup-essential"
+            class="cookie-popup-btn cookie-popup-ghost"
+          >
+            Accept Essential
+          </button>
+
+          <button
+            id="cookie-popup-accept-all"
+            class="cookie-popup-btn cookie-popup-primary"
+          >
+            Accept All
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/cookie-popup.js"></script>
+  </body>
+</html>
