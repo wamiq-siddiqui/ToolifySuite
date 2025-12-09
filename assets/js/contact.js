@@ -12,36 +12,41 @@ document.querySelectorAll(".contact-btn").forEach((btn) => {
 });
 
 // -------------------------------------------
-// FORM BUTTON STATE + FORM RESET (ADDED CODE)
+// FORM BUTTON STATE + FORM RESET
 // -------------------------------------------
 
 const contactForm = document.querySelector(".contact-form");
 const contactBtn = document.querySelector(".contact-btn");
 
-if (contactForm && contactBtn) {
-  contactForm.addEventListener("submit", (e) => {
-    // Local testing ke liye prevent mat karna,
-    // warna formsubmit.co ka kaam nahi chalega.
+// Button reset helper
+function resetContactButton() {
+  if (!contactBtn) return;
+  contactBtn.disabled = false;
+  contactBtn.style.opacity = "1";
+  contactBtn.textContent = "Send Message";
+}
 
-    // Button disable + animation
+if (contactForm && contactBtn) {
+  contactForm.addEventListener("submit", () => {
     contactBtn.disabled = true;
     contactBtn.style.opacity = "0.75";
     contactBtn.textContent = "Sending…";
 
-    // Chhota sa delay so button change user ko dikh sake
     setTimeout(() => {
       contactBtn.textContent = "Message Sent ✓";
     }, 600);
 
-    // Localhost testing ke liye form reset ho jaye
+    // Just visual reset before redirect on localhost
     setTimeout(() => {
       contactForm.reset();
     }, 800);
   });
 }
 
-// Refresh par form force reset
+// -------------------------------------------
+// FIX BACK/FORWARD CACHE ISSUE
+// -------------------------------------------
 window.addEventListener("pageshow", () => {
-  const form = document.querySelector(".contact-form");
-  if (form) form.reset();
+  if (contactForm) contactForm.reset();
+  resetContactButton();
 });

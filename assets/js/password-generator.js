@@ -343,8 +343,8 @@
     if (!items.length) return;
 
     const text = Array.from(items)
-      .map((el) => el.textContent)
-      .join("\n");
+      .map((el,i) => `${i + 1}.${el.textContent}`)
+      .join("\r\n");
     navigator.clipboard.writeText(text);
 
     const old = copyAllBtn.textContent;
@@ -357,8 +357,8 @@
     if (!items.length) return;
 
     const text = Array.from(items)
-      .map((el) => el.textContent)
-      .join("\n");
+      .map((el, i) => `${i + 1}.${el.textContent}`)
+      .join("\r\n");
 
     const blob = new Blob([text], { type: "text/plain" });
     const url = URL.createObjectURL(blob);

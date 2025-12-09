@@ -1,0 +1,22 @@
+<svg width="200" height="200" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <!-- Rounded background -->
+  <rect x="4" y="4" width="56" height="56" rx="16" fill="#14b8a6"/>
+
+  <!-- Hex nut -->
+  <polygon
+    points="32,18 40,22 40,30 32,34 24,30 24,22"
+    fill="white"
+    opacity="0.96"
+  />
+
+  <!-- Inner circle of nut -->
+  <circle cx="32" cy="26" r="4.2" fill="#14b8a6"/>
+
+  <!-- Little spark/detail -->
+  <circle cx="42.5" cy="17.5" r="2.4" fill="white" opacity="0.9"/>
+  <rect x="41.4" y="13.5" width="0.9" height="3.5" fill="white" opacity="0.9"/>
+  <rect x="44" y="17.1" width="3.5" height="0.9" fill="white" opacity="0.9"/>
+
+  <!-- Base bar (ground) -->
+  <rect x="20" y="40" width="24" height="3" rx="1.5" fill="white" opacity="0.9"/>
+</svg>

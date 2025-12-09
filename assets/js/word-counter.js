@@ -44,7 +44,8 @@ input.addEventListener("input", updateWordCounter);
 // COPY
 copyBtn.addEventListener("click", () => {
   if (!input.value) return;
-  navigator.clipboard.writeText(input.value);
+  const formatted = input.value.replace(/\r?\n/g, "\r\n");
+  navigator.clipboard.writeText(formatted);
   copyBtn.textContent = "Copied!";
   setTimeout(() => (copyBtn.textContent = "Copy"), 1200);
 });
@@ -53,7 +54,8 @@ copyBtn.addEventListener("click", () => {
 downloadBtn.addEventListener("click", () => {
   if (!input.value) return;
 
-  const blob = new Blob([input.value], { type: "text/plain" });
+  const formatted = input.value.replace(/\r?\n/g, "\r\n");
+  const blob = new Blob([formatted], { type: "text/plain;charset=utf-8"});
   const url = URL.createObjectURL(blob);
 
   const a = document.createElement("a");
