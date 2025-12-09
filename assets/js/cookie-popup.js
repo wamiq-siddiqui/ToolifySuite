@@ -3,29 +3,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const btnEssential = document.getElementById("cookie-popup-essential");
   const btnAll = document.getElementById("cookie-popup-accept-all");
 
+  // Load nothing now — tracking removed completely.
   function loadTrackingScripts() {
-    // Google Analytics Script
-    const ga1 = document.createElement("script");
-    ga1.async = true;
-    ga1.src = "https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX";
-    document.head.appendChild(ga1);
-
-    const ga2 = document.createElement("script");
-    ga2.innerHTML = `
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){ dataLayer.push(arguments); }
-      gtag('js', new Date());
-      gtag('config', 'G-XXXXXXX');
-    `;
-    document.head.appendChild(ga2);
-
-    // Adsense
-    const ads = document.createElement("script");
-    ads.async = true;
-    ads.src =
-      "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXX";
-    ads.crossOrigin = "anonymous";
-    document.head.appendChild(ads);
+    // Empty — because Analytics & Adsense removed
   }
 
   const saved = localStorage.getItem("cookie-choice");
@@ -33,8 +13,9 @@ document.addEventListener("DOMContentLoaded", () => {
   if (!saved) {
     overlay.classList.add("popup-visible");
     document.body.style.overflow = "hidden";
-    document.body.classList.add("popup-open"); // ← NEW FIX
+    document.body.classList.add("popup-open");
   } else {
+    // Still call it (harmless, empty function)
     loadTrackingScripts();
   }
 
@@ -43,11 +24,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
     overlay.classList.remove("popup-visible");
     document.body.style.overflow = "";
-    document.body.classList.remove("popup-open");  // ← NEW FIX
+    document.body.classList.remove("popup-open");
 
-    loadTrackingScripts();
-}
+    loadTrackingScripts(); // does nothing, but kept for compatibility
+  }
 
+  // Both buttons do the same (close popup)
   btnEssential.addEventListener("click", () => accept("essential"));
   btnAll.addEventListener("click", () => accept("all"));
 });
