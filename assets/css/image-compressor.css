@@ -556,3 +556,15 @@ input[disabled] {
   transform: scale(0.94) !important;
   opacity: 0.85 !important;
 }
+
+/* Fix for SEO content list bullets going outside container */
+.image-compressor-content ul {
+  padding-left: 20px; /* Proper indentation */
+  margin-top: 10px; /* Prevent global margin override */
+  list-style-position: inside; /* Bullets stay inside the box */
+}
+
+.image-compressor-content li {
+  margin-bottom: 6px;
+  line-height: 1.6;
+}

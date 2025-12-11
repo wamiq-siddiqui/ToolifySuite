@@ -183,3 +183,54 @@
     transform: scale(0.98);
   }
 }
+
+/* SEO CONTENT BLOCK FIX */
+.word-counter-seo-content {
+  margin-top: 40px;
+  padding-top: 0;
+}
+
+/* Main SEO Heading (H2) */
+.word-counter-seo-heading {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 18px;
+  color: var(--primary); /* Same as FAQ heading */
+}
+
+/* Sub-headings (H3) */
+.word-counter-seo-content h3 {
+  margin-top: 24px;
+  margin-bottom: 8px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #0f172a; /* Same tone as FAQ questions */
+}
+
+/* Paragraphs */
+.word-counter-seo-content p {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 12px;
+  color: #0f172a;
+  opacity: 0.95;
+}
+
+/* Lists */
+.word-counter-seo-content ul {
+  margin-top: 6px;
+  margin-bottom: 18px;
+  padding-left: 22px;
+}
+
+.word-counter-seo-content ul li {
+  margin-bottom: 8px;
+  font-size: 16px;
+  color: #0f172a;
+}
+
+/* Remove margin-collapse glitch */
+.word-counter-faq,
+.word-counter-seo-content {
+  display: block;
+}

@@ -52,29 +52,91 @@
       content="https://toolifysuite.netlify.app/og-image.jpg"
     />
 
-    <!-- SCHEMA.ORG: WEBSITE + ORGANIZATION -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "ToolifySuite",
-        "url": "https://toolifysuite.netlify.app/",
-        "description": "A curated collection of free online tools for text, images, videos, generators, social media and productivity.",
-        "potentialAction": {
-          "@type": "SearchAction",
-          "target": "https://toolifysuite.netlify.app/?q={search_term_string}",
-          "query-input": "required name=search_term_string"
-        }
-      }
-    </script>
 
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "ToolifySuite",
-        "url": "https://toolifysuite.netlify.app/",
-        "logo": "https://toolifysuite.netlify.app/logo.png"
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://toolifysuite.netlify.app/#website",
+            "name": "ToolifySuite",
+            "url": "https://toolifysuite.netlify.app/",
+            "description": "ToolifySuite offers free online tools for text, images, videos, generators and productivity — fast, accurate and privacy-friendly.",
+            "publisher": {
+              "@id": "https://toolifysuite.netlify.app/#organization"
+            },
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": "https://toolifysuite.netlify.app/?q={search_term_string}",
+              "query-input": "required name=search_term_string"
+            }
+          },
+
+          {
+            "@type": "Organization",
+            "@id": "https://toolifysuite.netlify.app/#organization",
+            "name": "ToolifySuite",
+            "url": "https://toolifysuite.netlify.app/",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://toolifysuite.netlify.app/logo.png"
+            }
+          },
+
+          {
+            "@type": "WebPage",
+            "@id": "https://toolifysuite.netlify.app/#homepage",
+            "url": "https://toolifysuite.netlify.app/",
+            "name": "ToolifySuite — Free Online Tools",
+            "isPartOf": {
+              "@id": "https://toolifysuite.netlify.app/#website"
+            },
+            "about": {
+              "@id": "https://toolifysuite.netlify.app/#organization"
+            },
+            "description": "A growing collection of browser-based online tools for text, images, videos, social media and productivity."
+          },
+
+          {
+            "@type": "FAQPage",
+            "@id": "https://toolifysuite.netlify.app/#homepage-faq",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What is ToolifySuite?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "ToolifySuite is a collection of browser-based online tools that help with tasks like word counting, password generation, QR code creation and more — without installing anything."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is ToolifySuite completely free to use?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. All tools are free to use. Ads may appear in the future to support hosting and development, but the tools will remain free."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do I need an account or sign-up?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "No sign-up is required. All tools are available instantly without registration or login."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is my data or text stored anywhere?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "No. All tools run locally in your browser, ensuring your data never leaves your device."
+                }
+              }
+            ]
+          }
+        ]
       }
     </script>
 
@@ -289,75 +351,190 @@
     <!-- AD SLOT (TOOLS BOTTOM) -->
     <div class="ad-slot reveal-on-scroll">Ad Space</div>
 
-    <!-- HOME CONTENT / SEO SECTION -->
     <section class="home-content reveal-on-scroll">
       <h2>All Your Everyday Tools in One Place</h2>
+
       <p>
-        ToolifySuite is designed for people who work online every day — writers,
-        students, marketers, developers and content creators. Instead of opening
-        different websites for every small task, you can access a growing set of
-        focused tools in a single, clean interface.
-      </p>
-      <p>
-        Every tool is lightweight, mobile-friendly and tested for accuracy. You
-        can open the website, run the tool and move on with your work — no
-        distractions, pop-ups or noisy layouts.
+        ToolifySuite is built for people who want fast, distraction-free tools
+        that simply get the job done. Instead of switching between dozens of
+        websites for small tasks, you can access everything from text analysis
+        to image optimization to password generation in one consistent
+        interface. Every tool loads instantly, works inside your browser and
+        stays focused on accuracy, speed and privacy.
       </p>
 
-      <h3>Tool Categories</h3>
+      <p>
+        The platform is designed for students, writers, content creators,
+        freelancers, marketers and general users who perform digital tasks every
+        day. Whether you're formatting text, resizing images, converting media
+        files, generating secure passwords or preparing content for social
+        media, the goal is to save you time and reduce friction from your
+        workflow.
+      </p>
+
+      <h3>Why ToolifySuite Exists</h3>
+      <p>
+        Most online tools today come with pop-ups, ads that block the interface
+        or unnecessary steps that slow you down. ToolifySuite removes all that
+        noise. The tools are lightweight, browser-based and optimized to run
+        instantly, even on low-end devices. No downloads, installations or login
+        prompts. You open a tool, complete your task and move on — nothing else.
+      </p>
+
+      <p>
+        Performance, privacy and simplicity are the core principles behind every
+        tool. Your text, images or generated content are not uploaded to any
+        server. Everything processes locally inside your browser, which makes
+        the tools both faster and more private than typical online utilities.
+      </p>
+
+      <h3>A Growing Collection of Useful Tools</h3>
+      <p>
+        ToolifySuite contains multiple categories of essential tools, each
+        focused on solving a specific problem with clarity and precision. As the
+        platform grows, more tools will be added based on user needs and modern
+        workflow trends.
+      </p>
+
       <ul class="about-list">
         <li>
-          <strong>Text Tools:</strong> word counter, stylish text, formatting
-          helpers and more.
+          <strong>Text Tools:</strong>
+          <a href="tools/word-counter.html">Word Counter</a>,
+          <a href="tools/stylish-text.html">Stylish Text Converter</a> and more.
+          These tools help writers, developers and students generate, analyze
+          and transform text quickly.
         </li>
+
         <li>
-          <strong>Image Tools:</strong> basic compression, resizing and simple
-          adjustments.
+          <strong>Image Tools:</strong>
+          <a href="tools/image-compressor.html">Image Compressor</a> and
+          <a href="tools/image-resizer.html">Image Resizer</a>. They reduce file
+          sizes, convert formats and prepare images for websites, social media
+          and online submissions without losing clarity.
         </li>
+
         <li>
-          <strong>Video Tools:</strong> small utilities to convert, trim or
-          extract audio.
+          <strong>Video Tools:</strong>
+          <a href="tools/video-to-mp3.html">Video to MP3</a> and
+          <a href="tools/video-compressor.html">Video Compressor</a>. Perfect
+          for creators who want quick video conversions or lighter files for
+          sharing.
         </li>
+
         <li>
-          <strong>Generator Tools:</strong> password, QR codes and other
-          generators.
+          <strong>Generator Tools:</strong>
+          <a href="tools/password-generator.html">Password Generator</a> and
+          <a href="tools/qr-code-generator.html">QR Code Generator</a>, helping
+          you create secure passwords and instant QR codes with customizable
+          settings.
         </li>
+
         <li>
-          <strong>Social Media Tools:</strong> hashtags, bios and quick content
-          helpers.
+          <strong>Social Media Tools:</strong>
+          <a href="tools/hashtag-generator.html">Hashtag Generator</a> and
+          <a href="tools/bio-formatter.html">Bio Formatter</a> give creators
+          quick shortcuts to improve their content and grow online visibility.
         </li>
+
         <li>
-          <strong>Utility Tools:</strong> calculators, converters and daily-use
-          mini tools.
+          <strong>Utility Tools:</strong>
+          <a href="tools/unit-converter.html">Unit Converter</a> and
+          <a href="tools/age-calculator.html">Age Calculator</a> for simple,
+          daily tasks that otherwise require separate apps or websites.
         </li>
       </ul>
+
+      <h3>Built for Speed and Privacy</h3>
+      <p>
+        Every tool relies on client-side processing. This means that your files,
+        text, passwords or media never leave your device. For tools like
+        password generation, encryption-safe randomness is used directly from
+        your browser. For tools like compression or conversion, modern HTML5 and
+        Web APIs handle everything locally at high speed.
+      </p>
+
+      <p>
+        This approach keeps ToolifySuite lightweight, secure and extremely fast
+        — even when compared to tools that run on powerful servers.
+      </p>
+
+      <h3>Who Benefits from ToolifySuite?</h3>
+      <p>The platform helps a wide range of users:</p>
+
+      <ul class="about-list">
+        <li>
+          <strong>Students</strong> preparing assignments, compressing images or
+          generating citations.
+        </li>
+        <li>
+          <strong>Writers</strong> analyzing text, fixing content structure and
+          checking limits.
+        </li>
+        <li>
+          <strong>Digital marketers</strong> formatting bios, generating
+          hashtags and optimizing content.
+        </li>
+        <li>
+          <strong>Developers</strong> quickly generating passwords or preparing
+          assets.
+        </li>
+        <li>
+          <strong>Creators</strong> working with media files for online
+          platforms.
+        </li>
+        <li>
+          <strong>Everyday users</strong> who simply want tools that work
+          without unnecessary steps.
+        </li>
+      </ul>
+
+      <h3>Designed for Both Mobile and Desktop</h3>
+      <p>
+        The interface adapts cleanly to all screen sizes. Whether you're using a
+        phone, tablet or laptop, each tool maintains a consistent, clean and
+        accessible layout. No zooming, no broken grids, no cut-off elements.
+      </p>
+
+      <h3>The Goal Moving Forward</h3>
+      <p>
+        ToolifySuite will continue expanding with new categories and highly
+        specialized tools. The focus will remain the same: fast, accurate and
+        privacy-friendly utilities that help you complete everyday tasks with
+        minimum friction.
+      </p>
+
+      <p>
+        If you're looking for a reliable set of tools that work instantly
+        without wasting time, ToolifySuite gives you exactly that — clean,
+        modern and ready whenever you need it.
+      </p>
     </section>
 
     <!-- FAQ SECTION (HOMEPAGE) -->
     <section class="home-faq reveal-on-scroll">
       <h2>Frequently Asked Questions</h2>
 
-      <h3>What is ToolifySuite?</h3>
+      <h3>1. What is ToolifySuite?</h3>
       <p>
         ToolifySuite is a collection of free browser-based tools that help you
         handle small but important tasks like counting words, generating
         passwords, creating QR codes and more — without installing any software.
       </p>
 
-      <h3>Is ToolifySuite completely free to use?</h3>
+      <h3>2. Is ToolifySuite completely free to use?</h3>
       <p>
         Yes. All tools are free to access. In the future, ads may appear to
         support development and hosting costs, but the tools themselves will
         remain free.
       </p>
 
-      <h3>Do I need an account or sign-up?</h3>
+      <h3>3. Do I need an account or sign-up?</h3>
       <p>
         No account is required. You can open any tool and start using it
         immediately. No registration, login or email is needed.
       </p>
 
-      <h3>Is my data or text stored anywhere?</h3>
+      <h3>4. Is my data or text stored anywhere?</h3>
       <p>
         No. All tools are designed to run directly inside your browser. For
         tools like the Word Counter, your text never leaves your device and is
