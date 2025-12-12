@@ -117,4 +117,27 @@
     <priority>0.90</priority>
   </url>
 
+<!-- BLOG LIST PAGE -->
+  <url>
+    <loc>https://toolifysuite.netlify.app/blogs/blogs.html</loc>
+    <priority>0.85</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <!-- BLOG ARTICLES -->
+  <url>
+    <loc>https://toolifysuite.netlify.app/blogs/what-is-word-counter-and-how-it-works.html</loc>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://toolifysuite.netlify.app/blogs/what-is-password-generator-and-how-it-works.html</loc>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://toolifysuite.netlify.app/blogs/what-is-image-compressor-and-how-it-works.html</loc>
+    <priority>0.80</priority>
+  </url>
+
 </urlset>

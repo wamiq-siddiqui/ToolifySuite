@@ -1,0 +1,154 @@
+/* CONTAINER */
+.blog-container {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 0 20px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.pg-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* HERO */
+.blog-intro {
+  max-width: 900px;
+  margin: 50px auto 40px;
+  padding: 0 20px;
+  line-height: 1.7;
+}
+
+.blog-intro h1 {
+  font-size: 32px;
+  color: var(--primary);
+  margin-bottom: 12px;
+}
+
+.blog-intro p {
+  font-size: 17px;
+  opacity: 0.95;
+  margin-top: 10px;
+}
+
+/* GRID */
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 22px;
+}
+
+/* CARD */
+.blog-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  padding: 18px;
+  border-radius: 14px;
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: transform 0.45s ease, opacity 0.45s ease, box-shadow 0.25s ease;
+}
+.blog-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.12);
+}
+
+/* REVEAL CLASS */
+.blog-card.reveal {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* TEXT */
+.blog-card-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.blog-card-desc {
+  font-size: 15px;
+  opacity: 0.85;
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+.blog-meta {
+  font-size: 13px;
+  opacity: 0.65;
+}
+
+.blog-seo-content {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 0 20px;
+  line-height: 1.7;
+}
+
+.blog-seo-content h2 {
+  font-size: 28px;
+  color: var(--primary);
+  margin-bottom: 12px;
+}
+
+.blog-seo-content h3 {
+  font-size: 20px;
+  margin-top: 24px;
+}
+
+.blog-seo-content p {
+  font-size: 16px;
+  opacity: 0.95;
+  margin-top: 8px;
+}
+
+.blog-seo-content ul {
+  list-style: disc;
+  padding-left: 22px;
+  margin-top: 10px;
+}
+
+.blog-seo-content ul li {
+  margin-top: 6px;
+  font-size: 16px;
+}
+
+/* ----------------------------
+   BLOG CARD ANIMATIONS
+----------------------------- */
+
+/* Base animation */
+.blog-card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  cursor: pointer;
+}
+
+/* Desktop hover */
+@media (hover: hover) and (pointer: fine) {
+  .blog-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
+  }
+}
+
+/* Mobile tap animation */
+@media (hover: none) and (pointer: coarse) {
+  .blog-card.tap-active {
+    transform: scale(0.96);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    opacity: 0.9;
+    transition: transform 0.12s ease-out, opacity 0.12s ease-out;
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .blog-title {
+    font-size: 32px;
+  }
+  .blog-subtitle {
+    font-size: 16px;
+  }
+}
