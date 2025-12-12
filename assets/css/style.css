@@ -521,24 +521,28 @@ footer {
 }
 
 /* ADS SLOT STYLE (HOMEPAGE + TOOLS) */
+/* SIMPLE UNIVERSAL ADSENSE SLOT */
 .ad-slot {
-  max-width: 1150px;
-  margin: 20px auto 0;
-  padding: 18px;
+  width: 100%;
+  max-width: 900px;        /* your site's layout ka width */
+  min-height: 120px;       /* Adsense requirement */
+  margin: 30px auto;       /* center + spacing */
+  background: #eef2f6;     /* visible placeholder */
+  border: 1px dashed #cbd5e1;
   border-radius: 12px;
-  border: 1px dashed var(--border);
-  background: #e9eef3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #64748b;
   font-size: 14px;
-  text-align: center;
-  color: #7a8697;
-  transition: background-color 0.22s ease, border-color 0.22s ease,
-    transform 0.22s ease;
 }
 
-.ad-slot:hover {
-  background-color: #dde5f0;
-  border-color: #c3cddd;
-  transform: translateY(-1px);
+/* Mobile friendly */
+@media (max-width: 600px) {
+  .ad-slot {
+    min-height: 160px;     /* mobile ads are taller */
+    border-radius: 10px;
+  }
 }
 
 /* HOME CONTENT SEO SECTION */
