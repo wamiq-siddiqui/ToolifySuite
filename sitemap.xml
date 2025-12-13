@@ -19,12 +19,12 @@
   </url>
 
   <url>
-    <loc>https://toolifysuite.netlify.app/privacy.html</loc>
+    <loc>https://toolifysuite.netlify.app/privacy-policy.html</loc>
     <priority>0.80</priority>
   </url>
 
   <url>
-    <loc>https://toolifysuite.netlify.app/terms.html</loc>
+    <loc>https://toolifysuite.netlify.app/terms-of-service.html</loc>
     <priority>0.80</priority>
   </url>
 
@@ -57,32 +57,15 @@
     <priority>1.00</priority>
   </url>
 
-  <url>
-    <loc>https://toolifysuite.netlify.app/tools/stylish-text.html</loc>
-    <priority>0.90</priority>
-  </url>
-
   <!-- Image Tools -->
   <url>
     <loc>https://toolifysuite.netlify.app/tools/image-compressor.html</loc>
     <priority>0.90</priority>
   </url>
 
-  <url>
-    <loc>https://toolifysuite.netlify.app/tools/image-resizer.html</loc>
-    <priority>0.90</priority>
-  </url>
-
   <!-- Video Tools -->
-  <url>
-    <loc>https://toolifysuite.netlify.app/tools/video-to-mp3.html</loc>
-    <priority>0.90</priority>
-  </url>
 
-  <url>
-    <loc>https://toolifysuite.netlify.app/tools/video-compressor.html</loc>
-    <priority>0.90</priority>
-  </url>
+
 
   <!-- Generator Tools -->
   <url>
@@ -90,34 +73,15 @@
     <priority>1.00</priority>
   </url>
 
-  <url>
-    <loc>https://toolifysuite.netlify.app/tools/qr-code-generator.html</loc>
-    <priority>0.90</priority>
-  </url>
-
   <!-- Social Media Tools -->
-  <url>
-    <loc>https://toolifysuite.netlify.app/tools/hashtag-generator.html</loc>
-    <priority>0.90</priority>
-  </url>
 
-  <url>
-    <loc>https://toolifysuite.netlify.app/tools/bio-formatter.html</loc>
-    <priority>0.90</priority>
-  </url>
+
 
   <!-- Utility Tools -->
-  <url>
-    <loc>https://toolifysuite.netlify.app/tools/unit-converter.html</loc>
-    <priority>0.90</priority>
-  </url>
 
-  <url>
-    <loc>https://toolifysuite.netlify.app/tools/age-calculator.html</loc>
-    <priority>0.90</priority>
-  </url>
 
-<!-- BLOG LIST PAGE -->
+
+  <!-- BLOG LIST PAGE -->
   <url>
     <loc>https://toolifysuite.netlify.app/blogs/blogs.html</loc>
     <priority>0.85</priority>
