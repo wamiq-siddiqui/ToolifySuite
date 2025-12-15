@@ -10,12 +10,12 @@
 
   <url>
     <loc>https://toolifysuite.netlify.app/about.html</loc>
-    <priority>0.70</priority>
+    <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://toolifysuite.netlify.app/contact.html</loc>
-    <priority>0.70</priority>
+    <priority>0.80</priority>
   </url>
 
   <url>
@@ -30,7 +30,7 @@
 
   <url>
     <loc>https://toolifysuite.netlify.app/cookie-policy.html</loc>
-    <priority>0.60</priority>
+    <priority>0.80</priority>
   </url>
 
   <!-- ERROR PAGES (OPTIONAL, low priority) -->
@@ -54,6 +54,11 @@
   <!-- Text Tools -->
   <url>
     <loc>https://toolifysuite.netlify.app/tools/word-counter.html</loc>
+    <priority>1.00</priority>
+  </url>
+  
+  <url>
+    <loc>https://toolifysuite.netlify.app/tools/ai-text-cleaner.html</loc>
     <priority>1.00</priority>
   </url>
 
@@ -91,17 +96,22 @@
   <!-- BLOG ARTICLES -->
   <url>
     <loc>https://toolifysuite.netlify.app/blogs/what-is-word-counter-and-how-it-works.html</loc>
-    <priority>0.80</priority>
+    <priority>0.90</priority>
   </url>
 
   <url>
     <loc>https://toolifysuite.netlify.app/blogs/what-is-password-generator-and-how-it-works.html</loc>
-    <priority>0.80</priority>
+    <priority>0.90</priority>
   </url>
 
   <url>
     <loc>https://toolifysuite.netlify.app/blogs/what-is-image-compressor-and-how-it-works.html</loc>
-    <priority>0.80</priority>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://toolifysuite.netlify.app/blogs/what-is-ai-text-cleaner-and-how-it-works.html</loc>
+    <priority>0.90</priority>
   </url>
 
 </urlset>

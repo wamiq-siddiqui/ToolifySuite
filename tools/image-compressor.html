@@ -53,6 +53,56 @@
       content="https://toolifysuite.netlify.app/assets/img/og-image.jpg"
     />
 
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Image Compressor",
+        "url": "https://toolifysuite.netlify.app/tools/image-compressor.html",
+        "applicationCategory": "ImageTool",
+        "operatingSystem": "Any",
+        "description": "Compress JPG, PNG and WebP images without losing clarity. Fast browser-based compression with no uploads and no data tracking.",
+        "provider": {
+          "@type": "Organization",
+          "name": "ToolifySuite",
+          "url": "https://toolifysuite.netlify.app/"
+        }
+      }
+    </script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Why should images be compressed?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Compressed images load faster on websites, save bandwidth and are easier to share while maintaining visual quality."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which formats are supported?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The tool supports JPG, PNG and WebP formats. You can choose the output format as needed."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does compression happen offline?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. All compression happens directly in your browser using HTML5 canvas. Your files never leave your device."
+            }
+          }
+        ]
+      }
+    </script>
+    
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
 
@@ -128,7 +178,7 @@
               </div>
               <div class="submenu-panel" id="text-tools">
                 <a href="word-counter.html">Word Counter</a>
-                <a href="stylish-text.html">Stylish Text Converter</a>
+                <a href="ai-text-cleaner.html">AI Text Cleaner</a>
               </div>
             </div>
 
@@ -678,56 +728,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "WebApplication",
-        "name": "Image Compressor",
-        "url": "https://toolifysuite.netlify.app/tools/image-compressor.html",
-        "applicationCategory": "ImageTool",
-        "operatingSystem": "Any",
-        "description": "Compress JPG, PNG and WebP images without losing clarity. Fast browser-based compression with no uploads and no data tracking.",
-        "provider": {
-          "@type": "Organization",
-          "name": "ToolifySuite",
-          "url": "https://toolifysuite.netlify.app/"
-        }
-      }
-    </script>
-
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "Why should images be compressed?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Compressed images load faster on websites, save bandwidth and are easier to share while maintaining visual quality."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Which formats are supported?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "The tool supports JPG, PNG and WebP formats. You can choose the output format as needed."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Does compression happen offline?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes. All compression happens directly in your browser using HTML5 canvas. Your files never leave your device."
-            }
-          }
-        ]
-      }
-    </script>
 
     <script src="../assets/js/main.js"></script>
     <script src="../assets/js/image-compressor.js"></script>

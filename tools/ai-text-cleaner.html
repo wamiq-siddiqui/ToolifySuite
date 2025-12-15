@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO -->
+    <title>
+      AI Text Cleaner & Humanizer – Make AI Text Sound Natural | ToolifySuite
+    </title>
+
+    <meta
+      name="description"
+      content="Free AI Text Cleaner to remove robotic phrases, reduce repetition, improve readability and make AI-generated text sound natural. Works instantly in your browser."
+    />
+
+    <link
+      rel="canonical"
+      href="https://toolifysuite.netlify.app/tools/ai-text-cleaner.html"
+    />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="AI Text Cleaner & Humanizer" />
+    <meta
+      property="og:description"
+      content="Clean and humanize AI-generated text. Remove robotic tone, improve flow and readability instantly."
+    />
+    <meta
+      property="og:url"
+      content="https://toolifysuite.netlify.app/tools/ai-text-cleaner.html"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://toolifysuite.netlify.app/assets/img/og-image.jpg"
+    />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="AI Text Cleaner & Humanizer" />
+    <meta
+      name="twitter:description"
+      content="Make AI text sound human. Clean, rewrite and improve AI-generated content instantly."
+    />
+    <meta
+      name="twitter:image"
+      content="https://toolifysuite.netlify.app/assets/img/og-image.jpg"
+    />
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "AI Text Cleaner & Humanizer",
+        "url": "https://toolifysuite.netlify.app/tools/ai-text-cleaner.html",
+        "applicationCategory": "Utility",
+        "operatingSystem": "Any",
+        "description": "A free AI text cleaner that removes robotic phrases, improves readability and makes AI-generated content sound natural.",
+        "provider": {
+          "@type": "Organization",
+          "name": "ToolifySuite",
+          "url": "https://toolifysuite.netlify.app"
+        }
+      }
+    </script>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      href="../assets/favicon/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="../assets/favicon/favicon.svg"
+    />
+    <link rel="shortcut icon" href="../assets/favicon/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../assets/favicon/apple-touch-icon.png"
+    />
+    <meta name="apple-mobile-web-app-title" content="ToolifySuite" />
+    <link rel="manifest" href="../assets/favicon/site.webmanifest" />
+
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/ai-text-cleaner.css" />
+    <link rel="stylesheet" href="../assets/css/cookie-popup.css" />
+
+    <!-- Google Analytics  -->
+
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-CWQRFR64RZ"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-CWQRFR64RZ");
+    </script>
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav>
+      <a href="../index.html" class="logo">ToolifySuite</a>
+
+      <!-- HAMBURGER (MOBILE) -->
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <!-- MAIN NAV MENU -->
+      <ul id="nav-menu">
+        <li><a href="../index.html">Home</a></li>
+
+        <li><a href="../blogs/blogs.html">Blogs</a></li>
+
+        <!-- TOOLS DROPDOWN -->
+        <li class="dropdown">
+          <span class="drop-btn">Tools</span>
+
+          <!-- FIRST + SECOND LEVEL MENUS (GROUPED) -->
+          <div class="dropdown-menu">
+            <!-- Text tools -->
+            <div class="submenu-group">
+              <div class="submenu-item" data-submenu="text-tools">
+                Text Tools ▸
+              </div>
+              <div class="submenu-panel" id="text-tools">
+                <a href="word-counter.html">Word Counter</a>
+                <a href="ai-text-cleaner.html">AI Text Cleaner</a>
+              </div>
+            </div>
+
+            <!-- Image tools -->
+            <div class="submenu-group">
+              <div class="submenu-item" data-submenu="image-tools">
+                Image Tools ▸
+              </div>
+              <div class="submenu-panel" id="image-tools">
+                <a href="image-compressor.html">Image Compressor</a>
+                <a href="image-resizer.html">Image Resizer</a>
+              </div>
+            </div>
+
+            <!-- Video tools -->
+            <div class="submenu-group">
+              <div class="submenu-item" data-submenu="video-tools">
+                Video Tools ▸
+              </div>
+              <div class="submenu-panel" id="video-tools">
+                <a href="video-to-mp3.html">Video to MP3</a>
+                <a href="video-compressor.html">Video Compressor</a>
+              </div>
+            </div>
+
+            <!-- Generator tools -->
+            <div class="submenu-group">
+              <div class="submenu-item" data-submenu="generator-tools">
+                Generator Tools ▸
+              </div>
+              <div class="submenu-panel" id="generator-tools">
+                <a href="password-generator.html">Password Generator</a>
+                <a href="qr-code-generator.html">QR Code Generator</a>
+              </div>
+            </div>
+
+            <!-- Social media tools -->
+            <div class="submenu-group">
+              <div class="submenu-item" data-submenu="social-tools">
+                Social Media Tools ▸
+              </div>
+              <div class="submenu-panel" id="social-tools">
+                <a href="hashtag-generator.html">Hashtag Generator</a>
+                <a href="bio-formatter.html">Bio Formatter</a>
+              </div>
+            </div>
+
+            <!-- Utility tools -->
+            <div class="submenu-group">
+              <div class="submenu-item" data-submenu="utility-tools">
+                Utility Tools ▸
+              </div>
+              <div class="submenu-panel" id="utility-tools">
+                <a href="unit-converter.html">Unit Converter</a>
+                <a href="age-calculator.html">Age Calculator</a>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+        <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+        <li><a href="../terms-of-service.html">Terms of Service</a></li>
+      </ul>
+    </nav>
+
+    <!-- AI TEXT CLEANER TOOL -->
+    <section class="ai-text-cleaner-container">
+      <!-- HERO -->
+      <header class="ai-text-cleaner-hero ai-text-cleaner-reveal">
+        <h1 class="ai-text-cleaner-title">AI Text Cleaner & Humanizer</h1>
+        <p class="ai-text-cleaner-subtitle">
+          AI Text Cleaner & Humanizer is a free online writing tool designed to
+          clean, refine and improve AI-generated or unpolished text. It removes
+          repetition, fixes grammar and punctuation, improves sentence flow and
+          rewrites robotic content into clear, natural and human-readable
+          language. Whether you are editing AI-written articles, blog posts,
+          emails, assignments or marketing copy, this tool helps you make your
+          content sound professional, trustworthy and easy to read — without
+          changing the original meaning. All processing happens directly in your
+          browser, so your text stays private and secure.
+        </p>
+      </header>
+
+      <!-- Ads slot  -->
+      <div class="ad-slot">Ad Space</div>
+
+      <!-- TOOL -->
+      <div class="ai-text-cleaner-tool ai-text-cleaner-reveal">
+        <!-- INPUT -->
+        <div class="ai-text-cleaner-block">
+          <label class="ai-text-cleaner-label" for="ai-text-cleaner-input">
+            Input text
+          </label>
+
+          <textarea
+            id="ai-text-cleaner-input"
+            class="ai-text-cleaner-textarea"
+            placeholder="Paste AI-generated or unpolished text here..."
+            autocomplete="off"
+          ></textarea>
+
+          <!-- LIVE STATS -->
+          <div class="ai-text-cleaner-stats">
+            <span><strong id="ai-text-cleaner-words">0</strong> Words</span>
+            <span
+              ><strong id="ai-text-cleaner-chars">0</strong> Characters</span
+            >
+            <span
+              ><strong id="ai-text-cleaner-sentences">0</strong> Sentences</span
+            >
+          </div>
+        </div>
+
+        <!-- REWRITE MODE -->
+        <div class="ai-text-cleaner-mode">
+          <label class="ai-text-cleaner-label" for="ai-text-cleaner-mode">
+            Rewrite mode
+          </label>
+
+          <select id="ai-text-cleaner-mode" class="ai-text-cleaner-select">
+            <option value="clean">Clean (default)</option>
+            <option value="simplify">Simplify</option>
+            <option value="formal">Formal</option>
+            <option value="casual">Casual</option>
+          </select>
+        </div>
+
+        <!-- OPTIONS -->
+        <div class="ai-text-cleaner-options">
+          <h2 class="ai-text-cleaner-options-title">
+            Cleaning & optimization options
+          </h2>
+
+          <div class="ai-text-cleaner-checkbox-grid">
+            <label class="ai-text-cleaner-checkbox">
+              <input
+                type="checkbox"
+                id="ai-text-cleaner-remove-repetition"
+                checked
+              />
+              Remove repeated words and phrases
+            </label>
+
+            <label class="ai-text-cleaner-checkbox">
+              <input type="checkbox" id="ai-text-cleaner-fix-grammar" checked />
+              Fix grammar and punctuation
+            </label>
+
+            <label class="ai-text-cleaner-checkbox">
+              <input type="checkbox" id="ai-text-cleaner-humanize" checked />
+              Make text sound more human
+            </label>
+
+            <label class="ai-text-cleaner-checkbox">
+              <input type="checkbox" id="ai-text-cleaner-simplify" />
+              Simplify long and complex sentences
+            </label>
+
+            <label class="ai-text-cleaner-checkbox">
+              <input
+                type="checkbox"
+                id="ai-text-cleaner-remove-ai-patterns"
+                checked
+              />
+              Remove common AI writing patterns
+            </label>
+
+            <label class="ai-text-cleaner-checkbox">
+              <input
+                type="checkbox"
+                id="ai-text-cleaner-improve-flow"
+                checked
+              />
+              Improve sentence flow and readability
+            </label>
+
+            <label class="ai-text-cleaner-checkbox">
+              <input type="checkbox" id="ai-text-cleaner-active-voice" />
+              Convert passive voice to active voice
+            </label>
+
+            <label class="ai-text-cleaner-checkbox">
+              <input
+                type="checkbox"
+                id="ai-text-cleaner-preserve-meaning"
+                checked
+              />
+              Preserve original meaning
+            </label>
+          </div>
+        </div>
+
+        <!-- ACTIONS -->
+        <div class="ai-text-cleaner-actions">
+          <button id="ai-text-cleaner-run" class="ai-text-cleaner-btn primary">
+            Clean Text
+          </button>
+
+          <button id="ai-text-cleaner-reset" class="ai-text-cleaner-btn ghost">
+            Clear
+          </button>
+        </div>
+      </div>
+
+      <!-- OUTPUT -->
+      <div class="ai-text-cleaner-output ai-text-cleaner-reveal">
+        <label class="ai-text-cleaner-label" for="ai-text-cleaner-output">
+          Cleaned output
+        </label>
+
+        <textarea
+          id="ai-text-cleaner-output"
+          class="ai-text-cleaner-textarea output"
+          placeholder="Cleaned text will appear here..."
+          readonly
+        ></textarea>
+
+        <div class="ai-text-cleaner-output-actions">
+          <button id="ai-text-cleaner-copy" class="ai-text-cleaner-btn primary">
+            Copy
+          </button>
+
+          <button
+            id="ai-text-cleaner-download"
+            class="ai-text-cleaner-btn ghost"
+          >
+            Download
+          </button>
+        </div>
+      </div>
+
+      <!-- Ads slot  -->
+      <div class="ad-slot">Ad Space</div>
+
+      <!-- SEO CONTENT -->
+      <section class="ai-text-cleaner-content ai-text-cleaner-reveal">
+        <h2>What is an AI Text Cleaner?</h2>
+        <p>
+          An AI Text Cleaner is a writing enhancement tool designed to refine,
+          correct and humanize content generated by artificial intelligence or
+          written in a rushed or unpolished form. AI-generated text often
+          contains repetitive phrasing, unnatural sentence structures and
+          predictable patterns that reduce readability and trust.
+        </p>
+
+        <p>
+          This tool helps transform raw text into clear, natural and
+          professional content that reads as if it were written by a human, not
+          a machine.
+        </p>
+
+        <h2>Why should you clean AI-generated text?</h2>
+        <p>
+          While AI writing tools are powerful, their output is rarely perfect.
+          Search engines, editors and real readers can quickly detect robotic
+          tone, overused sentence structures and filler phrases.
+        </p>
+
+        <p>
+          Cleaning AI-generated text improves clarity, credibility and
+          engagement. It also helps reduce content rejection risks and improves
+          overall writing quality for blogs, websites, emails and professional
+          documents.
+        </p>
+
+        <h3>Key benefits of using an AI text cleaner</h3>
+        <ul>
+          <li>Improves readability and flow</li>
+          <li>Removes repetition and filler content</li>
+          <li>Corrects grammar and punctuation</li>
+          <li>Makes content sound more natural and human</li>
+          <li>Enhances trust and professionalism</li>
+          <li>Optimizes text quality for SEO and real users</li>
+        </ul>
+
+        <h3>Who should use this tool?</h3>
+        <ul>
+          <li>Bloggers editing AI-written articles</li>
+          <li>Content writers and editors</li>
+          <li>Students polishing assignments</li>
+          <li>Marketers refining landing page copy</li>
+          <li>Professionals improving emails and reports</li>
+        </ul>
+
+        <h2>How the AI Text Cleaner works</h2>
+        <p>
+          The tool analyzes sentence structure, word repetition, grammar
+          patterns and flow issues. Based on selected options, it refines the
+          text while preserving the original meaning.
+        </p>
+
+        <p>
+          All processing happens directly in your browser, ensuring speed,
+          privacy and full control over your content.
+        </p>
+      </section>
+
+      <!-- Ads slot  -->
+      <div class="ad-slot">Ad Space</div>
+
+      <!-- FAQ -->
+      <section class="ai-text-cleaner-faq ai-text-cleaner-reveal">
+        <h2>Frequently Asked Questions</h2>
+
+        <h3>1. Is this AI Text Cleaner free to use?</h3>
+        <p>
+          Yes. The AI Text Cleaner is completely free and does not require
+          registration or login.
+        </p>
+
+        <h3>2. Is my text stored or uploaded anywhere?</h3>
+        <p>
+          No. All text processing happens locally in your browser. Your content
+          is never uploaded or saved.
+        </p>
+
+        <h3>3. Can this tool remove AI detection patterns?</h3>
+        <p>
+          The tool helps reduce common AI writing patterns and repetitive
+          phrasing, making the text more natural and human-like.
+        </p>
+
+        <h3>4. Does it change the meaning of my text?</h3>
+        <p>
+          No. When the “Preserve original meaning” option is enabled, the tool
+          focuses on clarity and tone without altering intent.
+        </p>
+
+        <h3>5. What types of content work best?</h3>
+        <p>
+          Blog posts, articles, emails, marketing copy, scripts, essays and
+          general AI-generated text work best with this tool.
+        </p>
+      </section>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- COLUMN 1: BRAND -->
+        <div class="footer-col">
+          <h3 class="footer-logo">ToolifySuite</h3>
+          <p class="footer-text">
+            Fast, accurate and modern online tools designed for productivity. No
+            login, no installation — everything works instantly in your browser.
+          </p>
+        </div>
+
+        <!-- COLUMN 2: QUICK LINKS -->
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../blogs/blogs.html">Blogs</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- COLUMN 3: LEGAL -->
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="../terms-of-service.html">Terms of Service</a></li>
+            <li><a href="../cookie-policy.html">Cookie Policy</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">© 2025 ToolifySuite. All rights reserved.</div>
+    </footer>
+
+    <button id="scrollTopBtn" class="scroll-top-btn">↑</button>
+
+    <!-- COOKIE CONSENT BANNER -->
+    <div id="cookie-popup-overlay">
+      <div class="cookie-popup-dialog">
+        <h3 class="cookie-popup-title">Cookie Preferences</h3>
+
+        <p class="cookie-popup-desc">
+          ToolifySuite uses essential cookies for core site features. You can
+          allow only essential cookies, or allow analytics and advertising
+          cookies for a better experience.
+          <a href="../cookie-policy.html">Learn more</a>.
+        </p>
+
+        <div class="cookie-popup-actions">
+          <button
+            id="cookie-popup-essential"
+            class="cookie-popup-btn cookie-popup-ghost"
+          >
+            Accept Essential
+          </button>
+
+          <button
+            id="cookie-popup-accept-all"
+            class="cookie-popup-btn cookie-popup-primary"
+          >
+            Accept All
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/ai-text-cleaner.js"></script>
+    <script src="../assets/js/cookie-popup.js"></script>
+  </body>
+</html>

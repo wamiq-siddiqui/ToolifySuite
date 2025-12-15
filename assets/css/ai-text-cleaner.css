@@ -1,0 +1,315 @@
+/* =========================================
+AI TEXT CLEANER 
+========================================= */
+
+.ai-text-cleaner-container {
+  max-width: 900px;
+  margin: 70px auto;
+  padding: 0 20px;
+  line-height: 1.7;
+}
+
+/* -----------------------------------------
+  REVEAL ANIMATION (SAFE DEFAULT)
+  ----------------------------------------- */
+.ai-text-cleaner-reveal {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* Optional future JS hook */
+.ai-text-cleaner-reveal.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* -----------------------------------------
+  HERO
+  ----------------------------------------- */
+.ai-text-cleaner-hero {
+  margin-bottom: 40px;
+}
+
+.ai-text-cleaner-title {
+  font-size: 38px;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 12px;
+}
+
+.ai-text-cleaner-subtitle {
+  font-size: 18px;
+  opacity: 0.92;
+}
+
+/* -----------------------------------------
+  TOOL CARD
+  ----------------------------------------- */
+.ai-text-cleaner-tool {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 26px;
+  margin-bottom: 40px;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+@media (hover: hover) {
+  .ai-text-cleaner-tool:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 36px rgba(15, 23, 42, 0.12);
+  }
+}
+
+/* -----------------------------------------
+  BLOCKS
+  ----------------------------------------- */
+.ai-text-cleaner-block {
+  margin-bottom: 24px;
+}
+
+.ai-text-cleaner-label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+/* -----------------------------------------
+  TEXTAREA
+  ----------------------------------------- */
+.ai-text-cleaner-textarea {
+  width: 100%;
+  min-height: 220px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  padding: 16px;
+  font-size: 15px;
+  resize: vertical;
+  background: #f9fafb;
+  outline: none;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.ai-text-cleaner-textarea:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 1px rgba(59, 130, 246, 0.25);
+  background: #ffffff;
+}
+
+.ai-text-cleaner-textarea.output {
+  background: #ffffff;
+}
+
+/* -----------------------------------------
+  STATS
+  ----------------------------------------- */
+.ai-text-cleaner-stats {
+  margin-top: 8px;
+  display: flex;
+  gap: 18px;
+  font-size: 13px;
+  opacity: 0.8;
+  flex-wrap: wrap;
+}
+
+/* -----------------------------------------
+  REWRITE MODE
+  ----------------------------------------- */
+.ai-text-cleaner-mode {
+  margin-top: 22px;
+  max-width: 420px;
+}
+
+.ai-text-cleaner-select {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  font-size: 14px;
+  background: #f9fafb;
+  outline: none;
+  cursor: pointer;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease,
+    background-color 0.25s ease;
+}
+
+.ai-text-cleaner-select:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 1px rgba(59, 130, 246, 0.25);
+  background: #ffffff;
+}
+
+/* -----------------------------------------
+  OPTIONS
+  ----------------------------------------- */
+.ai-text-cleaner-options {
+  margin-top: 30px;
+}
+
+.ai-text-cleaner-options-title {
+  font-size: 20px;
+  margin-bottom: 14px;
+}
+
+.ai-text-cleaner-checkbox-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 10px 18px;
+}
+
+.ai-text-cleaner-checkbox {
+  font-size: 14px;
+  opacity: 0.95;
+}
+
+.ai-text-cleaner-checkbox input {
+  margin-right: 8px;
+}
+
+/* -----------------------------------------
+  ACTIONS
+  ----------------------------------------- */
+.ai-text-cleaner-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 26px;
+  flex-wrap: wrap;
+}
+
+/* -----------------------------------------
+  BUTTONS
+  ----------------------------------------- */
+.ai-text-cleaner-btn {
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+}
+
+.ai-text-cleaner-btn.primary {
+  background: var(--primary);
+  color: #ffffff;
+}
+
+.ai-text-cleaner-btn.ghost {
+  background: transparent;
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+
+@media (hover: hover) {
+  .ai-text-cleaner-btn:hover {
+    transform: translateY(-2px) scale(1.03);
+    box-shadow: 0 8px 20px rgba(59, 130, 246, 0.28);
+  }
+
+  .ai-text-cleaner-btn.ghost:hover {
+    background: #f1f5f9;
+    box-shadow: none;
+  }
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .ai-text-cleaner-btn:active {
+    transform: scale(0.94);
+    opacity: 0.85;
+  }
+}
+
+/* -----------------------------------------
+  OUTPUT
+  ----------------------------------------- */
+.ai-text-cleaner-output {
+  margin-bottom: 50px;
+}
+
+.ai-text-cleaner-output-actions {
+  margin-top: 12px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* -----------------------------------------
+  SEO CONTENT
+  ----------------------------------------- */
+.ai-text-cleaner-content {
+  margin-top: 20px;
+}
+
+.ai-text-cleaner-content h2 {
+  font-size: 28px;
+  margin-bottom: 12px;
+  margin-top: 15px;
+}
+
+.ai-text-cleaner-content h3 {
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+.ai-text-cleaner-content p {
+  font-size: 16px;
+  opacity: 0.95;
+  margin-top: 8px;
+}
+
+.ai-text-cleaner-content ul {
+  padding-left: 22px;
+  margin-top: 10px;
+}
+
+.ai-text-cleaner-content li {
+  margin-top: 6px;
+  font-size: 16px;
+}
+
+/* -----------------------------------------
+  FAQ
+  ----------------------------------------- */
+.ai-text-cleaner-faq {
+  margin-top: 20px;
+}
+
+.ai-text-cleaner-faq h2 {
+  font-size: 30px;
+  color: var(--primary);
+  margin-bottom: 14px;
+}
+
+.ai-text-cleaner-faq h3 {
+  font-size: 18px;
+  margin-top: 22px;
+}
+
+.ai-text-cleaner-faq p {
+  font-size: 15px;
+  opacity: 0.95;
+  margin-top: 6px;
+}
+
+/* -----------------------------------------
+  RESPONSIVE
+  ----------------------------------------- */
+@media (max-width: 700px) {
+  .ai-text-cleaner-title {
+    font-size: 30px;
+  }
+
+  .ai-text-cleaner-subtitle {
+    font-size: 16px;
+  }
+
+  .ai-text-cleaner-tool {
+    padding: 20px;
+  }
+
+  .ai-text-cleaner-textarea {
+    min-height: 180px;
+  }
+}
