@@ -1,0 +1,19 @@
+[[redirects]]
+from = "/privacy"
+to = "/privacy-policy.html"
+status = 301
+
+[[redirects]]
+from = "/privacy.html"
+to = "/privacy-policy.html"
+status = 301
+
+[[redirects]]
+from = "/terms"
+to = "/terms-of-service.html"
+status = 301
+
+[[redirects]]
+from = "/terms.html"
+to = "/terms-of-service.html"
+status = 301

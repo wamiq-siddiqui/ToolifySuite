@@ -13,53 +13,47 @@ function searchTools() {
 }
 
 /* ---------------------------------------
-   NAVBAR DROPDOWN (DESKTOP + MOBILE)
+   NAVBAR DROPDOWN – after navbar loads
 --------------------------------------- */
 
-// Elements
-const dropBtn = document.querySelector(".drop-btn");
-const mainMenu = document.querySelector(".dropdown-menu");
-const submenuItems = document.querySelectorAll(".submenu-item");
-const submenus = document.querySelectorAll(".submenu-panel");
-const hamburger = document.getElementById("hamburger");
-const navMenu = document.getElementById("nav-menu");
+function initNavbarDropdowns() {
+  const dropBtn = document.querySelector(".drop-btn");
+  const mainMenu = document.querySelector(".dropdown-menu");
+  const submenuItems = document.querySelectorAll(".submenu-item");
+  const submenus = document.querySelectorAll(".submenu-panel");
+  const hamburger = document.getElementById("hamburger");
+  const navMenu = document.getElementById("nav-menu");
 
-let mainOpen = false;
+  let mainOpen = false;
 
-// Guard: if nav missing for some reason, skip
-if (dropBtn && mainMenu && hamburger && navMenu) {
-  // MAIN MENU (Tools → categories)
+  if (!dropBtn || !mainMenu || !hamburger || !navMenu) return;
+
+  // MAIN MENU
   dropBtn.addEventListener("click", (e) => {
     e.stopPropagation();
     mainOpen = !mainOpen;
 
-    if (mainOpen) {
-      mainMenu.classList.add("show");
-    } else {
-      mainMenu.classList.remove("show");
-    }
+    mainMenu.classList.toggle("show", mainOpen);
 
-    // Close all submenus when toggling main
     submenus.forEach((s) => s.classList.remove("show"));
   });
 
-  // CATEGORY → TOOLS LIST
+  // CATEGORY SUBMENU
   submenuItems.forEach((item) => {
     item.addEventListener("click", (e) => {
       e.stopPropagation();
       const targetId = item.dataset.submenu;
 
       submenus.forEach((panel) => {
-        if (panel.id === targetId) {
-          panel.classList.toggle("show");
-        } else {
-          panel.classList.remove("show");
-        }
+        panel.classList.toggle(
+          "show",
+          panel.id === targetId && !panel.classList.contains("show")
+        );
       });
     });
   });
 
-  // CLICK OUTSIDE → CLOSE EVERYTHING
+  // CLICK OUTSIDE
   document.addEventListener("click", (e) => {
     if (!e.target.closest(".dropdown")) {
       mainMenu.classList.remove("show");
@@ -68,15 +62,12 @@ if (dropBtn && mainMenu && hamburger && navMenu) {
     }
   });
 
-  /* ---------------------------------------
-     MOBILE HAMBURGER MENU
-  --------------------------------------- */
+  // MOBILE MENU
   hamburger.addEventListener("click", (e) => {
     e.stopPropagation();
     navMenu.classList.toggle("show");
-    hamburger.classList.toggle("open"); // animated burger
+    hamburger.classList.toggle("open");
 
-    // When toggling mobile menu, collapse dropdown + submenus
     if (!navMenu.classList.contains("show")) {
       mainMenu.classList.remove("show");
       submenus.forEach((s) => s.classList.remove("show"));
@@ -91,7 +82,6 @@ if (dropBtn && mainMenu && hamburger && navMenu) {
 
 const scrollTopBtn = document.getElementById("scrollTopBtn");
 
-// SHOW/HIDE BUTTON
 if (scrollTopBtn) {
   window.addEventListener("scroll", () => {
     if (window.scrollY > 300) {
@@ -103,7 +93,6 @@ if (scrollTopBtn) {
     }
   });
 
-  // CLICK → SCROLL TO TOP
   scrollTopBtn.addEventListener("click", () => {
     window.scrollTo({
       top: 0,
@@ -130,7 +119,6 @@ window.addEventListener("DOMContentLoaded", () => {
 
   if (!revealEls.length) return;
 
-  // If IntersectionObserver not supported → just show everything
   if (!("IntersectionObserver" in window)) {
     revealEls.forEach((el) => el.classList.add("visible"));
     return;
@@ -156,11 +144,7 @@ window.addEventListener("DOMContentLoaded", () => {
   });
 })();
 
-/* ----------------------------------------------------
-   MOBILE/TABLET ANIMATION FIX LAYER (NON-DESTRUCTIVE)
-   ---------------------------------------------------- */
-
-// 1. Backup fix: reveal all after small delay (mobile sometimes misses IO events)
+/* backup reveal */
 setTimeout(() => {
   const unrevealed = document.querySelectorAll(
     ".reveal-on-scroll:not(.visible), .page-reveal:not(.visible)"
@@ -168,7 +152,6 @@ setTimeout(() => {
   unrevealed.forEach((el) => el.classList.add("visible"));
 }, 1200);
 
-// 2. Force reveal-on-scroll when user scrolls by touch
 window.addEventListener("scroll", () => {
   const revealEls = document.querySelectorAll(
     ".reveal-on-scroll:not(.visible), .page-reveal:not(.visible)"
@@ -182,11 +165,33 @@ window.addEventListener("scroll", () => {
   });
 });
 
-// 3. Tap-friendly hover simulation for touch screens
 document.addEventListener("touchstart", (e) => {
   const card = e.target.closest(".card");
   if (card) {
     card.classList.add("tap-active");
     setTimeout(() => card.classList.remove("tap-active"), 200);
+  }
+});
+
+/* ---------------------------------------
+   LOAD NAV + FOOTER, THEN INIT DROPDOWN
+--------------------------------------- */
+
+document.addEventListener("DOMContentLoaded", async () => {
+  try {
+    const navReq = await fetch("/components/navbar.html");
+    document.getElementById("global-navbar").innerHTML = await navReq.text();
+  } catch (err) {
+    console.error("Navbar load failed", err);
+  }
+
+  // attach dropdown handlers NOW
+  initNavbarDropdowns();
+
+  try {
+    const ftReq = await fetch("/components/footer.html");
+    document.getElementById("global-footer").innerHTML = await ftReq.text();
+  } catch (err) {
+    console.error("Footer load failed", err);
   }
 });

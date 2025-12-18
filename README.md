@@ -19,6 +19,7 @@ All tools run completely client-side with zero backend, ensuring fast performanc
 - Word Counter
 - Password Generator
 - Image Compressor
+- AI Text Cleaner & Humanizer
 
 ---
 
