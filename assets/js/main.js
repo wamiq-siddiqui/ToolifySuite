@@ -102,13 +102,6 @@ if (scrollTopBtn) {
 }
 
 /* ---------------------------------------
-   BODY LOAD FADE-IN
---------------------------------------- */
-window.addEventListener("DOMContentLoaded", () => {
-  document.body.classList.add("ready");
-});
-
-/* ---------------------------------------
    REVEAL-ON-SCROLL ANIMATIONS
 --------------------------------------- */
 
@@ -174,20 +167,86 @@ document.addEventListener("touchstart", (e) => {
 });
 
 /* ---------------------------------------
-   LOAD NAV + FOOTER, THEN INIT DROPDOWN
+   LOAD HEAD + NAVBAR + FOOTER
 --------------------------------------- */
 
 document.addEventListener("DOMContentLoaded", async () => {
+  // HEAD (analytics + favicon)
   try {
-    const navReq = await fetch("/components/navbar.html");
-    document.getElementById("global-navbar").innerHTML = await navReq.text();
+    const headReq = await fetch("/components/head-common.html");
+    document
+      .getElementById("global-head")
+      .insertAdjacentHTML("afterbegin", await headReq.text());
   } catch (err) {
-    console.error("Navbar load failed", err);
+    console.error("Head load failed", err);
   }
 
-  // attach dropdown handlers NOW
-  initNavbarDropdowns();
+  // STATIC NAVBAR inserted immediately
+  const navContainer = document.getElementById("global-navbar");
+  if (navContainer) {
+    navContainer.innerHTML = `
+    <nav class="nav-elevate">
+    <a href="/index.html" class="logo">ToolifySuite</a>
+  
+    <!-- HAMBURGER (MOBILE) -->
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  
+    <!-- MAIN NAV MENU -->
+    <ul id="nav-menu">
+      <li><a href="/index.html">Home</a></li>
+  
+      <li><a href="/blogs/blogs.html">Blogs</a></li>
+  
+      <!-- TOOLS DROPDOWN -->
+      <li class="dropdown">
+        <span class="drop-btn">Tools</span>
+  
+        <!-- FIRST + SECOND LEVEL MENUS (GROUPED) -->
+        <div class="dropdown-menu">
+          <!-- Text tools -->
+          <div class="submenu-group">
+            <div class="submenu-item" data-submenu="text-tools">Text Tools ▸</div>
+            <div class="submenu-panel" id="text-tools">
+              <a href="/tools/word-counter.html">Word Counter</a>
+              <a href="/tools/ai-text-cleaner.html">AI Text Cleaner</a>
+            </div>
+          </div>
+  
+          <!-- Image tools -->
+          <div class="submenu-group">
+            <div class="submenu-item" data-submenu="image-tools">
+              Image Tools ▸
+            </div>
+            <div class="submenu-panel" id="image-tools">
+              <a href="/tools/image-compressor.html">Image Compressor</a>
+            </div>
+          </div>
+  
+          <!-- Generator tools -->
+          <div class="submenu-group">
+            <div class="submenu-item" data-submenu="generator-tools">
+              Generator Tools ▸
+            </div>
+            <div class="submenu-panel" id="generator-tools">
+              <a href="/tools/password-generator.html">Password Generator</a>
+            </div>
+          </div>
+  
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/contact.html">Contact</a></li>
+      <li><a href="/privacy-policy.html">Privacy Policy</a></li>
+      <li><a href="/terms-of-service.html">Terms of Service</a></li>
+    </ul>
+  </nav>  
+    `;
+    initNavbarDropdowns();
+  }
 
+  // FOOTER
   try {
     const ftReq = await fetch("/components/footer.html");
     document.getElementById("global-footer").innerHTML = await ftReq.text();

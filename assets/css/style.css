@@ -26,18 +26,6 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-/* Small fade on initial load */
-body {
-  opacity: 0;
-  transform: translateY(4px);
-  transition: opacity 0.4s ease-out, transform 0.4s ease-out;
-}
-
-body.ready {
-  opacity: 1;
-  transform: translateY(0);
-}
-
 /* NAVBAR */
 nav {
   display: flex;

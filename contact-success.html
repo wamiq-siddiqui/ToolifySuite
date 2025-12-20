@@ -50,46 +50,14 @@
       content="https://toolifysuite.netlify.app/assets/img/og-image.jpg"
     />
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-    
-    <link
-      rel="icon"
-      type="image/png"
-      href="assets/favicon/favicon-96x96.png"
-      sizes="96x96"
-    />
-    <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
-    <link rel="shortcut icon" href="assets/favicon/favicon.ico" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="assets/favicon/apple-touch-icon.png"
-    />
-    <meta name="apple-mobile-web-app-title" content="ToolifySuite" />
-    <link rel="manifest" href="assets/favicon/site.webmanifest" />
-
-    <!-- Google Analytics  -->
-
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-CWQRFR64RZ"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "G-CWQRFR64RZ");
-    </script>
-
     <!-- CUSTOM SUCCESS CSS -->
-    <link rel="stylesheet" href="assets/css/contact-success.css" />
+    <link rel="stylesheet" href="/assets/css/contact-success.css" />
 
     <!-- GLOBAL NAV/FOOTER CSS -->
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+
+    <!-- Google Analytics & Favicon  -->
+    <div id="global-head"></div>
   </head>
 
   <body>
@@ -106,7 +74,7 @@
           ToolifySuite team. We will respond within 24–48 hours.
         </p>
 
-        <button onclick="window.location.href='index.html'" class="cs-btn">
+        <button onclick="window.location.href='/index.html'" class="cs-btn">
           Back to Home
         </button>
       </div>
@@ -119,9 +87,9 @@
     <button id="scrollTopBtn" class="scroll-top-btn">↑</button>
 
     <!-- SUCCESS PAGE JS -->
-    <script src="assets/js/contact-success.js"></script>
+    <script src="/assets/js/contact-success.js"></script>
 
     <!-- GLOBAL JS -->
-    <script src="assets/js/main.js"></script>
+    <script src="/assets/js/main.js"></script>
   </body>
 </html>
