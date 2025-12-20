@@ -26,6 +26,18 @@ body {
   text-rendering: optimizeLegibility;
 }
 
+/* Small fade on initial load */
+body {
+  opacity: 0;
+  transform: translateY(4px);
+  transition: opacity 0.4s ease-out, transform 0.4s ease-out;
+}
+
+body.ready {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* NAVBAR */
 nav {
   display: flex;
@@ -512,10 +524,10 @@ footer {
 /* SIMPLE UNIVERSAL ADSENSE SLOT */
 .ad-slot {
   width: 100%;
-  max-width: 900px;        /* your site's layout ka width */
-  min-height: 120px;       /* Adsense requirement */
-  margin: 30px auto;       /* center + spacing */
-  background: #eef2f6;     /* visible placeholder */
+  max-width: 900px; /* your site's layout ka width */
+  min-height: 120px; /* Adsense requirement */
+  margin: 30px auto; /* center + spacing */
+  background: #eef2f6; /* visible placeholder */
   border: 1px dashed #cbd5e1;
   border-radius: 12px;
   display: flex;
@@ -528,7 +540,7 @@ footer {
 /* Mobile friendly */
 @media (max-width: 600px) {
   .ad-slot {
-    min-height: 160px;     /* mobile ads are taller */
+    min-height: 160px; /* mobile ads are taller */
     border-radius: 10px;
   }
 }
@@ -733,38 +745,4 @@ footer {
       transform: translateY(0);
     }
   }
-}
-
-/* ===============================
-   COOKIE POPUP OVERLAY FIXED
-   =============================== */
-
-#cookie-popup-overlay {
-  position: fixed !important;
-  inset: 0 !important;
-  width: 100% !important;
-  height: 100% !important;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  background: rgba(0, 0, 0, 0.55);
-
-  z-index: 999999;
-  opacity: 0;
-  pointer-events: none;
-
-  transition: opacity 0.35s ease-out;
-}
-
-#cookie-popup-overlay.popup-visible {
-  opacity: 1;
-  pointer-events: auto;
-}
-
-body.popup-open {
-  transform: none !important;
-  opacity: 1 !important;
-  transition: none !important;
 }
